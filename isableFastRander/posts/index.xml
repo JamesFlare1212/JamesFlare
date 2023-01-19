@@ -1,0 +1,47 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>All Posts - JamesFlare</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>All Posts | JamesFlare</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Jan 2023 18:55:52 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>战舰世界8vs8计划</title>
+  <link>http://localhost:1313/posts/%E6%88%98%E8%88%B0%E4%B8%96%E7%95%8C8vs8%E8%AE%A1%E5%88%92/</link>
+  <pubDate>Sat, 14 Jan 2023 18:55:52 &#43;0800</pubDate>
+  <author>James</author>
+  <guid>http://localhost:1313/posts/%E6%88%98%E8%88%B0%E4%B8%96%E7%95%8C8vs8%E8%AE%A1%E5%88%92/</guid>
+  <description><![CDATA[群友赛B队计划]]></description>
+</item>
+<item>
+  <title>For 杨文雅</title>
+  <link>http://localhost:1313/posts/for%E6%9D%A8%E6%96%87%E9%9B%85/</link>
+  <pubDate>Fri, 13 Jan 2023 19:45:45 &#43;0800</pubDate>
+  <author>James</author>
+  <guid>http://localhost:1313/posts/for%E6%9D%A8%E6%96%87%E9%9B%85/</guid>
+  <description><![CDATA[给杨文雅的贺卡 很高兴认识你]]></description>
+</item>
+<item>
+  <title>下不为例</title>
+  <link>http://localhost:1313/posts/%E4%B8%8B%E4%B8%8D%E4%B8%BA%E4%BE%8B/</link>
+  <pubDate>Fri, 13 Jan 2023 18:30:18 &#43;0800</pubDate>
+  <author>James</author>
+  <guid>http://localhost:1313/posts/%E4%B8%8B%E4%B8%8D%E4%B8%BA%E4%BE%8B/</guid>
+  <description><![CDATA[NC-17–Adults Only; R-Restricted]]></description>
+</item>
+<item>
+  <title>Excalidraw全功能自部署</title>
+  <link>http://localhost:1313/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</link>
+  <pubDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</pubDate>
+  <author>James</author>
+  <guid>http://localhost:1313/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</guid>
+  <description><![CDATA[讲如何全栈部署Excalidraw]]></description>
+</item>
+<item>
+  <title>真假李宜婷 FALDetector的应用与教程</title>
+  <link>http://localhost:1313/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/</link>
+  <pubDate>Fri, 13 Jan 2023 13:44:52 &#43;0800</pubDate>
+  <author>James</author>
+  <guid>http://localhost:1313/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/</guid>
+  <description><![CDATA[本文是基于论文Detecting Photoshopped Faces by Scripting Photoshop的复现与使用]]></description>
+</item>
+</channel>
+</rss>

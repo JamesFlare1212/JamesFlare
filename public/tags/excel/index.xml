@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Excel - Tag - JamesFlare</title>
+    <link>https://jamesflare.com/tags/excel/</link>
+    <description>Excel - Tag - JamesFlare</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</lastBuildDate><atom:link href="https://jamesflare.com/tags/excel/" rel="self" type="application/rss+xml" /><item>
+  <title>制作Physic IA中的数据图表</title>
+  <link>https://jamesflare.com/posts/%E5%88%B6%E4%BD%9Cphysic-ia%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8/</link>
+  <pubDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</pubDate>
+  <author>James</author>
+  <guid>https://jamesflare.com/posts/%E5%88%B6%E4%BD%9Cphysic-ia%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8/</guid>
+  <description><![CDATA[使用Excel绘制满足IB Physic IA的数据图表]]></description>
+</item>
+</channel>
+</rss>

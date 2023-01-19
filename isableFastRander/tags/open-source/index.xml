@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Open Source - Tag - JamesFlare</title>
+    <link>http://localhost:1313/tags/open-source/</link>
+    <description>Open Source - Tag - JamesFlare</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/tags/open-source/" rel="self" type="application/rss+xml" /><item>
+  <title>Excalidraw全功能自部署</title>
+  <link>http://localhost:1313/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</link>
+  <pubDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</pubDate>
+  <author>James</author>
+  <guid>http://localhost:1313/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</guid>
+  <description><![CDATA[讲如何全栈部署Excalidraw]]></description>
+</item>
+</channel>
+</rss>

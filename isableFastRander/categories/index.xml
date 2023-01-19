@@ -1,0 +1,47 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Categories - Category - JamesFlare</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Categories - Category - JamesFlare</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Jan 2023 18:55:52 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/" rel="self" type="application/rss+xml" /><item>
+  <title>Games</title>
+  <link>http://localhost:1313/categories/games/</link>
+  <pubDate>Sat, 14 Jan 2023 18:55:52 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/categories/games/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Cards</title>
+  <link>http://localhost:1313/categories/cards/</link>
+  <pubDate>Fri, 13 Jan 2023 19:45:45 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/categories/cards/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Pictures</title>
+  <link>http://localhost:1313/categories/pictures/</link>
+  <pubDate>Fri, 13 Jan 2023 18:30:18 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/categories/pictures/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Tutorials</title>
+  <link>http://localhost:1313/categories/tutorials/</link>
+  <pubDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/categories/tutorials/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Sharing - Projects</title>
+  <link>http://localhost:1313/categories/sharing-projects/</link>
+  <pubDate>Fri, 13 Jan 2023 13:44:52 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/categories/sharing-projects/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>
