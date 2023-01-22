@@ -5,40 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>Excalidraw全功能自部署 - JamesFlare</title><meta name="author" content="">
+    <title>Excalidraw 全功能自部署 - JamesFlare</title><meta name="author" content="">
 <meta name="author-link" content="">
-<meta name="description" content="讲如何全栈部署Excalidraw" /><meta name="keywords" content='Open Source, JavaScript' /><meta itemprop="name" content="Excalidraw全功能自部署">
-<meta itemprop="description" content="讲如何全栈部署Excalidraw"><meta itemprop="datePublished" content="2023-01-13T15:54:36+08:00" />
+<meta name="description" content="这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？本人试图在本地私有化部署 Excalidraw，操作是很简单。" /><meta name="keywords" content='Docker, Excalidraw' /><meta itemprop="name" content="Excalidraw 全功能自部署">
+<meta itemprop="description" content="这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？本人试图在本地私有化部署 Excalidraw，操作是很简单。"><meta itemprop="datePublished" content="2023-01-13T15:54:36+08:00" />
 <meta itemprop="dateModified" content="2023-01-13T15:54:36+08:00" />
-<meta itemprop="wordCount" content="1724">
-<meta itemprop="keywords" content="Open Source,JavaScript," /><meta property="og:title" content="Excalidraw全功能自部署" />
-<meta property="og:description" content="讲如何全栈部署Excalidraw" />
+<meta itemprop="wordCount" content="1402">
+<meta itemprop="keywords" content="Open Source,JavaScript,Docker," /><meta property="og:title" content="Excalidraw 全功能自部署" />
+<meta property="og:description" content="这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？本人试图在本地私有化部署 Excalidraw，操作是很简单。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-13T15:54:36+08:00" />
 <meta property="article:modified_time" content="2023-01-13T15:54:36+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Excalidraw全功能自部署"/>
-<meta name="twitter:description" content="讲如何全栈部署Excalidraw"/>
+<meta name="twitter:title" content="Excalidraw 全功能自部署"/>
+<meta name="twitter:description" content="这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？本人试图在本地私有化部署 Excalidraw，操作是很简单。"/>
 <meta name="application-name" content="JamesFlare">
 <meta name="apple-mobile-web-app-title" content="JamesFlare"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" /><link rel="prev" href="https://jamesflare.com/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/" /><link rel="next" href="https://jamesflare.com/posts/%E4%B8%8B%E4%B8%8D%E4%B8%BA%E4%BE%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><meta name="google-site-verification" content="52mFqOsqj3hS2NyCsn3vfoHqPFcuZ_rCQkZWQ4fGdEg" /><script type="application/ld+json">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" /><link rel="prev" href="https://www.jamesflare.com/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/" /><link rel="next" href="https://www.jamesflare.com/posts/%E4%B8%8B%E4%B8%8D%E4%B8%BA%E4%BE%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><meta name="google-site-verification" content="52mFqOsqj3hS2NyCsn3vfoHqPFcuZ_rCQkZWQ4fGdEg" /><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "Excalidraw全功能自部署",
+    "headline": "Excalidraw 全功能自部署",
     "inLanguage": "en",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https:\/\/jamesflare.com\/posts\/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2\/"
-    },"genre": "posts","keywords": "Open Source, JavaScript","wordcount":  1724 ,
-    "url": "https:\/\/jamesflare.com\/posts\/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2\/","datePublished": "2023-01-13T15:54:36+08:00","dateModified": "2023-01-13T15:54:36+08:00","publisher": {
+      "@id": "https:\/\/www.jamesflare.com\/posts\/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2\/"
+    },"genre": "posts","keywords": "Open Source, JavaScript, Docker","wordcount":  1402 ,
+    "url": "https:\/\/www.jamesflare.com\/posts\/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2\/","datePublished": "2023-01-13T15:54:36+08:00","dateModified": "2023-01-13T15:54:36+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
         "name": "James"
-      },"description": ""
+      },"description": "这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？本人试图在本地私有化部署 Excalidraw，操作是很简单。"
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
@@ -159,7 +159,7 @@
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX">
-        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>Excalidraw全功能自部署</span>
+        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>Excalidraw 全功能自部署</span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://jamesflare.com" title="Author"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img
     class="lazyload avatar"
@@ -170,7 +170,7 @@
     alt="James"
     title="James"/>&nbsp;James</a></span>
           <span class="post-category">included in <a href="/categories/tutorials/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Tutorials</a></span></div>
-      <div class="post-meta-line"><span title=2023-01-13&#32;15:54:36><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-13">2023-01-13</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1724 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;</div>
+      <div class="post-meta-line"><span title=2023-01-13&#32;15:54:36><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-13">2023-01-13</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1402 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 3 minutes</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>Contents</span>
@@ -195,20 +195,20 @@
   </ul>
 </nav></div>
       </div><div class="content" id="content"><h2 id="intro">Intro</h2>
-<p>这可能是中文互联网上唯一一篇讲如何全栈部署Excalidraw的，绝大多数只是部署了一个残血的前端。</p>
-<p>本人试图在本地私有化部署Excalidraw，操作是很简单，根据官方的README，一会就完成了是吧。</p>
+<p>这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。</p>
+<p>本人试图在本地私有化部署 Excalidraw，操作是很简单，根据官方的 README，一会就完成了是吧。</p>
 <h3 id="issue">Issue</h3>
-<p>但是有没有发现，分享链接和在线协作有问题，用不了？甚至Libraries还有点问题？</p>
-<p>这是因为，几乎全网的搭建教程都只是搭建了excalidraw-app这个前端，它的存储需要excalidraw-json，协作需要excalidraw-room。</p>
+<p>但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？</p>
+<p>这是因为，几乎全网的搭建教程都只是搭建了 excalidraw-app 这个前端，它的存储需要 excalidraw-json，协作需要 excalidraw-room。</p>
 <p>这些代码官方都开源了，不过前端的进度实在是太快了，于是乎这些就都用不了了。</p>
-<p>比如官方开放的excalidraw-json是S3的存储，现在不出意外是firebase，官方也没出个剥离的版本，那我们怎么办呢？</p>
+<p>比如官方开放的 excalidraw-json 是 S3 的存储，现在不出意外是 firebase，官方也没出个剥离的版本，那我们怎么办呢？</p>
 <h3 id="solution">Solution</h3>
 <p>答，<strong>降级</strong>，<strong>构建全栈</strong>。</p>
-<p>excalidraw-app我们用官方的，不过版本差不多是9个月前的，讲道理，功能也没少多少，bug也没什么问题，这一代前端可以很好兼容。</p>
-<p>excalidraw-json是用不得了，国外也有一些方案用minio来跑S3对接它，但是我测试了，问题有些大，这个后端应该是用不得了，所幸的是，我找到了一个第三方，用自己代码实现的全功能后端，支持v2的api，excalidraw-storage-backend。</p>
-<p>excalidraw-room我们用官方的，最新一版，差不多是9个月前的，和前端一致，可以正常使用。</p>
-<p>redis，这个是excalidraw-storage-backend所需要的，用于临时存储分享画板的数据，所以它不能保证数据可靠性。</p>
-<p>那我们开始吧，本方案使用docker-compose。</p>
+<p>excalidraw-app 我们用官方的，不过版本差不多是 9 个月前的，讲道理，功能也没少多少，bug 也没什么问题，这一代前端可以很好兼容。</p>
+<p>excalidraw-json 是用不得了，国外也有一些方案用 minio 来跑 S3 对接它，但是我测试了，问题有些大，这个后端应该是用不得了，所幸的是，我找到了一个第三方，用自己代码实现的全功能后端，支持 v2 的 api，excalidraw-storage-backend。</p>
+<p>excalidraw-room 我们用官方的，最新一版，差不多是 9 个月前的，和前端一致，可以正常使用。</p>
+<p>redis，这个是 excalidraw-storage-backend 所需要的，用于临时存储分享画板的数据，所以它不能保证数据可靠性。</p>
+<p>那我们开始吧，本方案使用 docker-compose。</p>
 <ul>
 <li>excalidraw-app</li>
 <li>excalidraw-room</li>
@@ -216,7 +216,7 @@
 <li>redis</li>
 </ul>
 <h2 id="operation">Operation</h2>
-<p>Docker Compose配置</p>
+<p>Docker Compose 配置</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3.8&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
@@ -251,7 +251,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">redis</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="s2">&#34;6379:6379&#34;</span><span class="w">
-</span></span></span></code></pre></div><p>本身不支持https，如有需要可以通过反向代理实现，不过记得同时修改environment中的变量</p>
+</span></span></span></code></pre></div><p>本身不支持 https，如有需要可以通过反向代理实现，不过记得同时修改 environment 中的变量</p>
 <p>此配置文件经本地测试通过，可完美运行。</p>
 <a class="lightgallery" href="/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/excalidrawLocalDemo.webp" data-thumbnail="/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/excalidrawLocalDemo.webp" data-sub-html="<h2>/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/excalidrawLocalDemo.webp</h2>">
     <img
@@ -264,7 +264,7 @@
       title="/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/excalidrawLocalDemo.webp" width="3456" height="2057"/>
   </a>
 <hr>
-<p>如果你6379端口有冲突，那可以选择构建一个network</p>
+<p>如果你 6379 端口有冲突，那可以选择构建一个 network</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker network create excalidraw-net
 </span></span></code></pre></div><p>然后像这样对其进行一些修改，就完成了</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3.8&#34;</span><span class="w">
@@ -307,11 +307,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">external</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">excalidraw-net</span><span class="w">
 </span></span></span></code></pre></div><h2 id="run">Run</h2>
-<p>找一个，或者新建一个目录，创建docker-compose文件</p>
+<p>找一个，或者新建一个目录，创建 docker-compose 文件</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano docker-compose.yml
-</span></span></code></pre></div><p>填入docker-compose配置，记得按你的实际情况修改。</p>
-<p>随后我们要配置一下反向代理，我的Web Server是OpenLiteSpeed，其他的同理。</p>
-<p>首先需要创建External App，类型是Web Server，一共三个，分别对应</p>
+</span></span></code></pre></div><p>填入 docker-compose 配置，记得按你的实际情况修改。</p>
+<p>随后我们要配置一下反向代理，我的 Web Server 是 OpenLiteSpeed，其他的同理。</p>
+<p>首先需要创建 External App，类型是 Web Server，一共三个，分别对应</p>
 <ul>
 <li>excalidraw</li>
 <li>excalidraw-room</li>
@@ -340,8 +340,8 @@
 </tr>
 </tbody>
 </table>
-<p>地址端口对应docker-compose中的。</p>
-<p>随后我们需要创建一个Vitrual Host，以下供参考</p>
+<p>地址端口对应 docker-compose 中的。</p>
+<p>随后我们需要创建一个 Vitrual Host，以下供参考</p>
 <table>
 <thead>
 <tr>
@@ -388,11 +388,11 @@
 </tr>
 </tbody>
 </table>
-<p>在创建Vitrual Host之前你需要在/usr/local/lsws下创建一个目录</p>
+<p>在创建 Vitrual Host 之前你需要在 /usr/local/lsws 下创建一个目录</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir /usr/local/lsws/excalidraw
 </span></span></code></pre></div><p>然后完成引导选项，不知道怎么填的话可以参考上面的参数。</p>
-<p>也可以参照<a href="https://lala.im/6991.html"target="_blank" rel="external nofollow noopener noreferrer">OpenLiteSpeed：从入门到放弃-荒岛 (lala.im)</a></p>
-<p>我们就可以去Rewrite里配置了，添加如下Rewrite Rules</p>
+<p>也可以参照 <a href="https://lala.im/6991.html"target="_blank" rel="external nofollow noopener noreferrer">OpenLiteSpeed：从入门到放弃-荒岛 (lala.im)</a></p>
+<p>我们就可以去 Rewrite 里配置了，添加如下 Rewrite Rules</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">RewriteCond %{SERVER_PORT} ^80$
 </span></span><span class="line"><span class="cl">RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 </span></span><span class="line"><span class="cl">
@@ -400,16 +400,16 @@
 </span></span><span class="line"><span class="cl">RewriteRule /api/(.*) http://excalidraw-storage-backend/api/$1 [P]
 </span></span><span class="line"><span class="cl">RewriteRule /socket.io/(.*) http://excalidraw-room/socket.io/$1 [P]
 </span></span><span class="line"><span class="cl">RewriteRule /(.*) http://excalidraw/$1 [P,L]
-</span></span></code></pre></div><p>完事后记得在Rewrite Control里开启，Enable Rewrite设置为Yes，不然就白给了。</p>
+</span></span></code></pre></div><p>完事后记得在 Rewrite Control 里开启，Enable Rewrite 设置为 Yes，不然就白给了。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">RewriteCond %{SERVER_PORT} ^80$
 </span></span><span class="line"><span class="cl">RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
-</span></span></code></pre></div><p>我在重写规则中加入了如上配置，这是自动跳转https，如果你没有https的需要，记得修改。</p>
-<p>还记得一个问题吗，excalidraw-room用websocket实现实时通信，我们也需要让它支持websocket。</p>
-<p>在OpenLiteSpeed中，它有一个专门的项。去到Web Socket Proxy，新建一条</p>
+</span></span></code></pre></div><p>我在重写规则中加入了如上配置，这是自动跳转 https，如果你没有 https 的需要，记得修改。</p>
+<p>还记得一个问题吗，excalidraw-room 用 websocket 实现实时通信，我们也需要让它支持 websocket。</p>
+<p>在 OpenLiteSpeed 中，它有一个专门的项。去到 Web Socket Proxy，新建一条</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">URL /socket.io/
 </span></span><span class="line"><span class="cl">Address 127.0.0.1:&lt;你设置的excalidraw-room端口&gt;
-</span></span></code></pre></div><p>接下来设置好域名，到General设置，SSL如有需要也可以去SSL项设置。</p>
-<p>最后记得在Listener里把Virtual Host加上。</p>
+</span></span></code></pre></div><p>接下来设置好域名，到 General 设置，SSL 如有需要也可以去 SSL 项设置。</p>
+<p>最后记得在 Listener 里把 Virtual Host 加上。</p>
 <h2 id="ending">Ending</h2>
 <h3 id="stack">Stack</h3>
 <a class="lightgallery" href="/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/stackDrawing.webp" data-thumbnail="/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/stackDrawing.webp" data-sub-html="<h2>/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/stackDrawing.webp</h2>">
@@ -423,7 +423,7 @@
       title="/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/stackDrawing.webp" width="4025" height="2110"/>
   </a>
 <h2 id="addtional">Addtional</h2>
-<p>不要被我这里的OpenLiteSpeed搞混了，用Nginx什么的本质上没区别，搞对结构即可。</p>
+<p>不要被我这里的 OpenLiteSpeed 搞混了，用 Nginx 什么的本质上没区别，搞对结构即可。</p>
 </div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
@@ -433,16 +433,16 @@
     <div class="post-info-line">
       <div class="post-info-md"></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" data-title="Excalidraw全功能自部署" data-hashtags="Open Source,JavaScript"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" data-hashtag="Open Source"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" data-title="Excalidraw全功能自部署"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" data-title="Excalidraw 全功能自部署" data-hashtags="Open Source,JavaScript,Docker"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" data-hashtag="Open Source"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/" data-title="Excalidraw 全功能自部署"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
   </div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/open-source/' class="post-tag">Open Source</a><a href='/tags/javascript/' class="post-tag">JavaScript</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/open-source/' class="post-tag">Open Source</a><a href='/tags/javascript/' class="post-tag">JavaScript</a><a href='/tags/docker/' class="post-tag">Docker</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
     </section>

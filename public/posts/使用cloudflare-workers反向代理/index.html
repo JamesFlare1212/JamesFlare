@@ -5,40 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>使用CloudFlare Workers反向代理 - JamesFlare</title><meta name="author" content="">
+    <title>使用 CloudFlare Workers 反向代理 - JamesFlare</title><meta name="author" content="">
 <meta name="author-link" content="">
-<meta name="description" content="Gravatar的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。" /><meta name="keywords" content='Gravatar, CloudFlare Workers' /><meta itemprop="name" content="使用CloudFlare Workers反向代理">
-<meta itemprop="description" content="Gravatar的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。"><meta itemprop="datePublished" content="2023-01-15T21:31:42+08:00" />
+<meta name="description" content="Gravatar 的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。" /><meta name="keywords" content='Gravatar, CloudFlare Workers' /><meta itemprop="name" content="使用 CloudFlare Workers 反向代理">
+<meta itemprop="description" content="Gravatar 的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。"><meta itemprop="datePublished" content="2023-01-15T21:31:42+08:00" />
 <meta itemprop="dateModified" content="2023-01-15T21:31:42+08:00" />
-<meta itemprop="wordCount" content="1868">
-<meta itemprop="keywords" content="CloudFlare,JavaScript," /><meta property="og:title" content="使用CloudFlare Workers反向代理" />
-<meta property="og:description" content="Gravatar的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。" />
+<meta itemprop="wordCount" content="1749">
+<meta itemprop="keywords" content="CloudFlare,JavaScript," /><meta property="og:title" content="使用 CloudFlare Workers 反向代理" />
+<meta property="og:description" content="Gravatar 的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-15T21:31:42+08:00" />
 <meta property="article:modified_time" content="2023-01-15T21:31:42+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="使用CloudFlare Workers反向代理"/>
-<meta name="twitter:description" content="Gravatar的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。"/>
+<meta name="twitter:title" content="使用 CloudFlare Workers 反向代理"/>
+<meta name="twitter:description" content="Gravatar 的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。"/>
 <meta name="application-name" content="JamesFlare">
 <meta name="apple-mobile-web-app-title" content="JamesFlare"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" /><link rel="prev" href="https://jamesflare.com/posts/%E6%88%98%E8%88%B0%E4%B8%96%E7%95%8C8vs8%E8%AE%A1%E5%88%92/" /><link rel="next" href="https://jamesflare.com/posts/%E5%88%B6%E4%BD%9Cphysic-ia%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><meta name="google-site-verification" content="52mFqOsqj3hS2NyCsn3vfoHqPFcuZ_rCQkZWQ4fGdEg" /><script type="application/ld+json">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" /><link rel="prev" href="https://www.jamesflare.com/posts/%E6%88%98%E8%88%B0%E4%B8%96%E7%95%8C8vs8%E8%AE%A1%E5%88%92/" /><link rel="next" href="https://www.jamesflare.com/posts/%E5%88%B6%E4%BD%9Cphysic-ia%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><meta name="google-site-verification" content="52mFqOsqj3hS2NyCsn3vfoHqPFcuZ_rCQkZWQ4fGdEg" /><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "使用CloudFlare Workers反向代理",
+    "headline": "使用 CloudFlare Workers 反向代理",
     "inLanguage": "en",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https:\/\/jamesflare.com\/posts\/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86\/"
-    },"genre": "posts","keywords": "CloudFlare, JavaScript","wordcount":  1868 ,
-    "url": "https:\/\/jamesflare.com\/posts\/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86\/","datePublished": "2023-01-15T21:31:42+08:00","dateModified": "2023-01-15T21:31:42+08:00","publisher": {
+      "@id": "https:\/\/www.jamesflare.com\/posts\/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86\/"
+    },"genre": "posts","keywords": "CloudFlare, JavaScript","wordcount":  1749 ,
+    "url": "https:\/\/www.jamesflare.com\/posts\/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86\/","datePublished": "2023-01-15T21:31:42+08:00","dateModified": "2023-01-15T21:31:42+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
         "name": "James"
-      },"description": ""
+      },"description": "Gravatar 的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。"
   }
   </script></head>
   <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
@@ -159,9 +159,9 @@
 
   <article class="page single">
     <div class="header"><h1 class="single-title animate__animated animate__flipInX">
-        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>使用CloudFlare Workers反向代理</span>
+        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>使用 CloudFlare Workers 反向代理</span>
       </h1></div><div class="post-meta">
-      <div class="post-meta-line"><span class="post-author"><a href="https://jamesflare.com" title="Author"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img
+      <div class="post-meta-line"><span class="post-author"><a href="https://www.jamesflare.com" title="Author"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img
     class="lazyload avatar"
     src="/svg/loading.min.svg"
     data-src="https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32&amp;d="
@@ -170,7 +170,7 @@
     alt="James"
     title="James"/>&nbsp;James</a></span>
           <span class="post-category">included in <a href="/categories/tutorials/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Tutorials</a></span></div>
-      <div class="post-meta-line"><span title=2023-01-15&#32;21:31:42><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-15">2023-01-15</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1868 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;</div>
+      <div class="post-meta-line"><span title=2023-01-15&#32;21:31:42><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-15">2023-01-15</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1749 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>Contents</span>
@@ -203,8 +203,8 @@
   </ul>
 </nav></div>
       </div><div class="content" id="content"><h2 id="introduction">Introduction</h2>
-<p>在中国大陆Gravatar的头像服务一直处于不稳定，不可用的状态。除了使用一些公开服务，我们还能自行建立反代。</p>
-<p>不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像Gravatar在全球都有CDN。</p>
+<p>在中国大陆 Gravatar 的头像服务一直处于不稳定，不可用的状态。除了使用一些公开服务，我们还能自行建立反代。</p>
+<p>不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。</p>
 <p>我希望全球的用户加载速度都很快，退一万步说，用户挂的代理也可能遍布全球，是吧。</p>
 <figure><a class="lightgallery" href="/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/network-map.svg" data-thumbnail="/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/network-map.svg" data-sub-html="<h2>CloudFlare Network Map</h2>">
     <img
@@ -245,14 +245,14 @@
 </tbody>
 </table>
 <p><strong>答</strong>，一般免费计划完全够用。</p>
-<p>每天有10万次免费请求，基本上是用不完的。10ms的CPU时间，这也是足够的，我们的代码估计也就1ms的时间。</p>
-<p>退一万步，就算是要付钱，由于不需要Workers KV，Queues，Durable Objects等产品，只要单纯的请求数，也就是Paid plan - Unbound。100万次也就$0.15，一元人民币的样子，巨便宜好吧。</p>
+<p>每天有 10 万次免费请求，基本上是用不完的。10ms 的 CPU 时间，这也是足够的，我们的代码估计也就 1ms 的时间。</p>
+<p>退一万步，就算是要付钱，由于不需要 Workers KV，Queues，Durable Objects 等产品，只要单纯的请求数，也就是 Paid plan - Unbound。100 万次也就 $0.15，一元人民币的样子，巨便宜好吧。</p>
 <h3 id="calculation">Calculation</h3>
-<p>图片算30KB一张的话，100万张也就是28.6G流量，算上VPS可能是双向，那就是57.2G的样子。</p>
-<p>57G/元的价格放到VPS领域，可以说是中等水平，不算便宜，毕竟还有无限流量，俄罗斯VPS什么的不是？但是考虑到线路的水平，和全球的数据中心，这直接杀爆了。</p>
-<p>CloudFlare的速度也不是什么俄罗斯小鸡可以比的，如果是CN2这样的高级线路，那这个价格肯定是买不到的。</p>
+<p>图片算 30KB 一张的话，100 万张也就是 28.6G 流量，算上 VPS 可能是双向计算流量的，那就是 57.2G 的样子。</p>
+<p>57G/元的价格放到 VPS 领域，可以说是中等水平，不算便宜，毕竟还有无限流量，俄罗斯 VPS 什么的不是？但是考虑到线路的水平，和全球的数据中心，这直接杀爆了。</p>
+<p>CloudFlare 的速度也不是什么俄罗斯小鸡可以比的，如果是 CN2 这样的高级线路，那这个价格肯定是买不到的。</p>
 <h2 id="workers-js">Workers JS</h2>
-<p>使用方法很简单，基本上就是JavaScript。</p>
+<p>使用方法很简单，基本上就是 JavaScript。</p>
 <p>我们小小构造一下，</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">addEventListener</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;fetch&#34;</span><span class="p">,</span> <span class="nx">event</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -265,14 +265,14 @@
 </span></span><span class="line"><span class="cl">        <span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></div><p>逻辑说白了就是返回以https请求收到的请求URL，不过把请求时候发的<code>hostname</code>改成<code>www.gravatar.com</code>。</p>
+</span></span></code></pre></div><p>逻辑说白了就是返回以 https 请求收到的请求 URL，不过把请求时候发的<code>hostname</code>改成<code>www.gravatar.com</code>。</p>
 <h3 id="deploy">Deploy</h3>
-<p>使用方法也很简单，在CloudFlare的Workers面板新建一个Service。</p>
-<p>把上面这个抄到里面，并且Deploy。</p>
+<p>使用方法也很简单，在 CloudFlare 的 Workers 面板新建一个 Service。</p>
+<p>把上面这个抄到里面，并且 Deploy。</p>
 <h2 id="custom-domains">Custom Domains</h2>
-<p>默认会给你一个workers.dev的三级域名，如果你想用也完全没有问题，但是我希望设置一个自己的域名。</p>
-<p>我们进入Service，到Trigger，点Add Custom Domains，输入你需要的域名。</p>
-<p>比如我选择gravatar.jamesflare.com，那就输入<code>gravatar.jamesflare.com</code>。</p>
+<p>默认会给你一个 workers.dev 的三级域名，如果你想用也完全没有问题，但是我希望设置一个自己的域名。</p>
+<p>我们进入 Service，到 Trigger，点 Add Custom Domains，输入你需要的域名。</p>
+<p>比如我选择 gravatar.jamesflare.com，那就输入<code>gravatar.jamesflare.com</code>。</p>
 <h2 id="testing">Testing</h2>
 <p>那我们测试一下，看看能不能用，这里用我头像测试<code>/avatar/75cea16f157b9c5da5435379ab6cf294?s=32&amp;d=</code>。</p>
 <p>构造一下，</p>
@@ -287,7 +287,7 @@
 <p>可以看到，是没问题的。</p>
 <h2 id="use-in-hugo">Use in Hugo</h2>
 <p>这属于衍生部分，其实过程相对曲折，而且不同主题可能还不一样，所以我希望记录一下思路而不是直接说结果，毕竟方案可能不通用。</p>
-<p>我用的主题是FixIt，约等于LoveIt。</p>
+<p>我用的主题是 FixIt，约等于 LoveIt。</p>
 <h3 id="find-template-file">Find Template File</h3>
 <p>通过查找，发现负责文章作者头像的模板位于<code>/FixIt/layouts/partials/single/post-author.html</code></p>
 <p>代码如下，</p>
@@ -343,24 +343,24 @@
 </span></span><span class="line"><span class="cl">    -}}
 </span></span><span class="line"><span class="cl">  {{- end -}}
 </span></span><span class="line"><span class="cl">{{- end -}}
-</span></span></code></pre></div><p>可以看见它判定配置文件params项下gravatar子项，Host项下的值。</p>
-<p>如果Host项是空，则默认<code>www.gravatar.com</code>。</p>
-<p>那么很简单，有两种思路，一个是修改这个HTML模板本身，还有一个思路是修改配置文件的值。</p>
+</span></span></code></pre></div><p>可以看见它判定配置文件 params 项下 gravatar 子项，Host 项下的值。</p>
+<p>如果 Host 项是空，则默认<code>www.gravatar.com</code>。</p>
+<p>那么很简单，有两种思路，一个是修改这个 HTML 模板本身，还有一个思路是修改配置文件的值。</p>
 <h3 id="make-toml-config">Make .toml Config</h3>
 <p>我选第二种。</p>
-<p>我的配置文件是.toml格式的，稍微构造一下。</p>
+<p>我的配置文件是 .toml 格式的，稍微构造一下。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">gravatar</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">host</span> <span class="p">=</span> <span class="s2">&#34;gravatar.jamesflare.com&#34;</span>
 </span></span></code></pre></div><h3 id="preview-in-browser">Preview in Browser</h3>
 <p>重新生成一下站点，这里我只要预览即可，</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server -D -e production --disableFastRender
-</span></span></code></pre></div><p>打开浏览器访问<code>http://localhost:1313/</code>，查看一下HTML源码有关部分。</p>
+</span></span></code></pre></div><p>打开浏览器访问<code>http://localhost:1313/</code>，查看一下 HTML 源码有关部分。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">data-src=&#34;https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32<span class="ni">&amp;amp;</span>d=&#34;
 </span></span><span class="line"><span class="cl">data-srcset=&#34;https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32<span class="ni">&amp;amp;</span>d=, https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32<span class="ni">&amp;amp;</span>d= 1.5x, https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32<span class="ni">&amp;amp;</span>d= 2x&#34;
-</span></span></code></pre></div><p>可以看到已经改过来了，通过浏览器开发工具Sources栏也可以验证。</p>
+</span></span></code></pre></div><p>可以看到已经改过来了，通过浏览器开发工具 Sources 栏也可以验证。</p>
 <h3 id="others">Others</h3>
-<p>小插曲，FixIt的配置文件原来已经有这项了，小丑原来是我自己，不过全网都搜不到，哭了。</p>
+<p>小插曲，FixIt 的配置文件原来已经有这项了，小丑原来是我自己，不过全网都搜不到，哭了。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">gravatar</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="c"># Gravatar host, default: &#34;www.gravatar.com&#34;</span>
@@ -375,9 +375,9 @@
     <div class="post-info-line">
       <div class="post-info-md"></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" data-title="使用CloudFlare Workers反向代理" data-hashtags="CloudFlare,JavaScript"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" data-hashtag="CloudFlare"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" data-title="使用CloudFlare Workers反向代理"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" data-title="使用 CloudFlare Workers 反向代理" data-hashtags="CloudFlare,JavaScript"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" data-hashtag="CloudFlare"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.jamesflare.com/posts/%E4%BD%BF%E7%94%A8cloudflare-workers%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/" data-title="使用 CloudFlare Workers 反向代理"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
@@ -390,8 +390,8 @@
     </section>
   </div>
 
-  <div class="post-nav"><a href="/posts/%E6%88%98%E8%88%B0%E4%B8%96%E7%95%8C8vs8%E8%AE%A1%E5%88%92/" class="post-nav-item" rel="prev" title="战舰世界8vs8计划"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>战舰世界8vs8计划</a>
-      <a href="/posts/%E5%88%B6%E4%BD%9Cphysic-ia%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8/" class="post-nav-item" rel="next" title="制作Physic IA中的数据图表">制作Physic IA中的数据图表<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+  <div class="post-nav"><a href="/posts/%E6%88%98%E8%88%B0%E4%B8%96%E7%95%8C8vs8%E8%AE%A1%E5%88%92/" class="post-nav-item" rel="prev" title="战舰世界 8 VS 8 计划"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>战舰世界 8 VS 8 计划</a>
+      <a href="/posts/%E5%88%B6%E4%BD%9Cphysic-ia%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8/" class="post-nav-item" rel="next" title="制作 Physic IA 中的数据图表">制作 Physic IA 中的数据图表<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>

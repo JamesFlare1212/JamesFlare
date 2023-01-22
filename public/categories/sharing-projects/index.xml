@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Sharing - Projects - Category - JamesFlare</title>
-    <link>https://jamesflare.com/categories/sharing-projects/</link>
+    <link>https://www.jamesflare.com/categories/sharing-projects/</link>
     <description>Sharing - Projects - Category - JamesFlare</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Jan 2023 13:44:52 &#43;0800</lastBuildDate><atom:link href="https://jamesflare.com/categories/sharing-projects/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Jan 2023 13:44:52 &#43;0800</lastBuildDate><atom:link href="https://www.jamesflare.com/categories/sharing-projects/" rel="self" type="application/rss+xml" /><item>
   <title>真假李宜婷 FALDetector的应用与教程</title>
-  <link>https://jamesflare.com/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/</link>
+  <link>https://www.jamesflare.com/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/</link>
   <pubDate>Fri, 13 Jan 2023 13:44:52 &#43;0800</pubDate>
   <author>James</author>
-  <guid>https://jamesflare.com/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/</guid>
-  <description><![CDATA[本文是基于论文Detecting Photoshopped Faces by Scripting Photoshop的复现与使用]]></description>
+  <guid>https://www.jamesflare.com/posts/%E7%9C%9F%E5%81%87%E6%9D%8E%E5%AE%9C%E5%A9%B7-faldetector%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E6%95%99%E7%A8%8B/</guid>
+  <description><![CDATA[本文是基于论文 Detecting Photoshopped Faces by Scripting Photoshop 的复现与使用，原始团队在 GitHub 上公布了代码，我们可以非常简单的在本地部署。你好奇你的小伙伴们有没有 PS 自己的照片吗？]]></description>
 </item>
 </channel>
 </rss>

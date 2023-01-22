@@ -1,78 +1,86 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Tags - Tag - JamesFlare</title>
-    <link>https://jamesflare.com/tags/</link>
+    <link>https://www.jamesflare.com/tags/</link>
     <description>Tags - Tag - JamesFlare</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</lastBuildDate><atom:link href="https://jamesflare.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</lastBuildDate><atom:link href="https://www.jamesflare.com/tags/" rel="self" type="application/rss+xml" /><item>
   <title>Excel</title>
-  <link>https://jamesflare.com/tags/excel/</link>
+  <link>https://www.jamesflare.com/tags/excel/</link>
   <pubDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/excel/</guid>
+  <guid>https://www.jamesflare.com/tags/excel/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>CloudFlare</title>
-  <link>https://jamesflare.com/tags/cloudflare/</link>
+  <link>https://www.jamesflare.com/tags/cloudflare/</link>
   <pubDate>Sun, 15 Jan 2023 21:31:42 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/cloudflare/</guid>
+  <guid>https://www.jamesflare.com/tags/cloudflare/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>JavaScript</title>
-  <link>https://jamesflare.com/tags/javascript/</link>
+  <link>https://www.jamesflare.com/tags/javascript/</link>
   <pubDate>Sun, 15 Jan 2023 21:31:42 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/javascript/</guid>
+  <guid>https://www.jamesflare.com/tags/javascript/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>WoWs</title>
-  <link>https://jamesflare.com/tags/wows/</link>
+  <link>https://www.jamesflare.com/tags/wows/</link>
   <pubDate>Sat, 14 Jan 2023 18:55:52 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/wows/</guid>
+  <guid>https://www.jamesflare.com/tags/wows/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Friends</title>
-  <link>https://jamesflare.com/tags/friends/</link>
+  <link>https://www.jamesflare.com/tags/friends/</link>
   <pubDate>Fri, 13 Jan 2023 19:45:45 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/friends/</guid>
+  <guid>https://www.jamesflare.com/tags/friends/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Gifts</title>
-  <link>https://jamesflare.com/tags/gifts/</link>
+  <link>https://www.jamesflare.com/tags/gifts/</link>
   <pubDate>Fri, 13 Jan 2023 19:45:45 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/gifts/</guid>
+  <guid>https://www.jamesflare.com/tags/gifts/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Encryption</title>
-  <link>https://jamesflare.com/tags/encryption/</link>
+  <link>https://www.jamesflare.com/tags/encryption/</link>
   <pubDate>Fri, 13 Jan 2023 18:30:18 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/encryption/</guid>
+  <guid>https://www.jamesflare.com/tags/encryption/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Docker</title>
+  <link>https://www.jamesflare.com/tags/docker/</link>
+  <pubDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>https://www.jamesflare.com/tags/docker/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Open Source</title>
-  <link>https://jamesflare.com/tags/open-source/</link>
+  <link>https://www.jamesflare.com/tags/open-source/</link>
   <pubDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/open-source/</guid>
+  <guid>https://www.jamesflare.com/tags/open-source/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>AI</title>
-  <link>https://jamesflare.com/tags/ai/</link>
+  <link>https://www.jamesflare.com/tags/ai/</link>
   <pubDate>Fri, 13 Jan 2023 13:44:52 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/tags/ai/</guid>
+  <guid>https://www.jamesflare.com/tags/ai/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

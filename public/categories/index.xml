@@ -1,46 +1,46 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Categories - Category - JamesFlare</title>
-    <link>https://jamesflare.com/categories/</link>
+    <link>https://www.jamesflare.com/categories/</link>
     <description>Categories - Category - JamesFlare</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</lastBuildDate><atom:link href="https://jamesflare.com/categories/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</lastBuildDate><atom:link href="https://www.jamesflare.com/categories/" rel="self" type="application/rss+xml" /><item>
   <title>Tutorials</title>
-  <link>https://jamesflare.com/categories/tutorials/</link>
+  <link>https://www.jamesflare.com/categories/tutorials/</link>
   <pubDate>Mon, 16 Jan 2023 14:14:32 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/categories/tutorials/</guid>
+  <guid>https://www.jamesflare.com/categories/tutorials/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Games</title>
-  <link>https://jamesflare.com/categories/games/</link>
+  <link>https://www.jamesflare.com/categories/games/</link>
   <pubDate>Sat, 14 Jan 2023 18:55:52 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/categories/games/</guid>
+  <guid>https://www.jamesflare.com/categories/games/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Cards</title>
-  <link>https://jamesflare.com/categories/cards/</link>
+  <link>https://www.jamesflare.com/categories/cards/</link>
   <pubDate>Fri, 13 Jan 2023 19:45:45 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/categories/cards/</guid>
+  <guid>https://www.jamesflare.com/categories/cards/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Pictures</title>
-  <link>https://jamesflare.com/categories/pictures/</link>
+  <link>https://www.jamesflare.com/categories/pictures/</link>
   <pubDate>Fri, 13 Jan 2023 18:30:18 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/categories/pictures/</guid>
+  <guid>https://www.jamesflare.com/categories/pictures/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Sharing - Projects</title>
-  <link>https://jamesflare.com/categories/sharing-projects/</link>
+  <link>https://www.jamesflare.com/categories/sharing-projects/</link>
   <pubDate>Fri, 13 Jan 2023 13:44:52 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>https://jamesflare.com/categories/sharing-projects/</guid>
+  <guid>https://www.jamesflare.com/categories/sharing-projects/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

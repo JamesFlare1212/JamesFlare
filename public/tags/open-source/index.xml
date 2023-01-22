@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Open Source - Tag - JamesFlare</title>
-    <link>https://jamesflare.com/tags/open-source/</link>
+    <link>https://www.jamesflare.com/tags/open-source/</link>
     <description>Open Source - Tag - JamesFlare</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</lastBuildDate><atom:link href="https://jamesflare.com/tags/open-source/" rel="self" type="application/rss+xml" /><item>
-  <title>Excalidraw全功能自部署</title>
-  <link>https://jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</link>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</lastBuildDate><atom:link href="https://www.jamesflare.com/tags/open-source/" rel="self" type="application/rss+xml" /><item>
+  <title>Excalidraw 全功能自部署</title>
+  <link>https://www.jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</link>
   <pubDate>Fri, 13 Jan 2023 15:54:36 &#43;0800</pubDate>
   <author>James</author>
-  <guid>https://jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</guid>
-  <description><![CDATA[讲如何全栈部署Excalidraw]]></description>
+  <guid>https://www.jamesflare.com/posts/excalidraw%E5%85%A8%E5%8A%9F%E8%83%BD%E8%87%AA%E9%83%A8%E7%BD%B2/</guid>
+  <description><![CDATA[这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？本人试图在本地私有化部署 Excalidraw，操作是很简单。]]></description>
 </item>
 </channel>
 </rss>
