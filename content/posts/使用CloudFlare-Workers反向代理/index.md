@@ -1,12 +1,12 @@
 ---
-title: "使用CloudFlare Workers反向代理"
+title: "使用 CloudFlare Workers 反向代理"
 subtitle: ""
 date: 2023-01-15T21:31:42+08:00
 draft: false
 author: "James"
-authorLink: "https://jamesflare.com"
+authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: ""
+description: "Gravatar 的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。"
 keywords: ["Gravatar","CloudFlare Workers"]
 license: ""
 comment: false
@@ -21,7 +21,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: "Gravatar的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。"
+summary: "Gravatar 的头像服务在中国大陆不稳定。除了使用一些公开镜像，我们还能自行建立反代。不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。"
 resources:
 - name: featured-image
   src: featured-image.jpg
@@ -45,9 +45,9 @@ repost:
 
 ## Introduction
 
-在中国大陆Gravatar的头像服务一直处于不稳定，不可用的状态。除了使用一些公开服务，我们还能自行建立反代。
+在中国大陆 Gravatar 的头像服务一直处于不稳定，不可用的状态。除了使用一些公开服务，我们还能自行建立反代。
 
-不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像Gravatar在全球都有CDN。
+不过如果要自己建立反代，就需要服务器，这可能需要额外的成本，更重要的一个问题是，一般人的服务器只能在一个机房，所以地区之间的速度差异会很大，而不像 Gravatar 在全球都有 CDN。
 
 我希望全球的用户加载速度都很快，退一万步说，用户挂的代理也可能遍布全球，是吧。
 
@@ -66,21 +66,21 @@ repost:
 
 **答**，一般免费计划完全够用。
 
-每天有10万次免费请求，基本上是用不完的。10ms的CPU时间，这也是足够的，我们的代码估计也就1ms的时间。
+每天有 10 万次免费请求，基本上是用不完的。10ms 的 CPU 时间，这也是足够的，我们的代码估计也就 1ms 的时间。
 
-退一万步，就算是要付钱，由于不需要Workers KV，Queues，Durable Objects等产品，只要单纯的请求数，也就是Paid plan - Unbound。100万次也就$0.15，一元人民币的样子，巨便宜好吧。
+退一万步，就算是要付钱，由于不需要 Workers KV，Queues，Durable Objects 等产品，只要单纯的请求数，也就是 Paid plan - Unbound。100 万次也就 $0.15，一元人民币的样子，巨便宜好吧。
 
 ### Calculation
 
-图片算30KB一张的话，100万张也就是28.6G流量，算上VPS可能是双向，那就是57.2G的样子。
+图片算 30KB 一张的话，100 万张也就是 28.6G 流量，算上 VPS 可能是双向计算流量的，那就是 57.2G 的样子。
 
-57G/元的价格放到VPS领域，可以说是中等水平，不算便宜，毕竟还有无限流量，俄罗斯VPS什么的不是？但是考虑到线路的水平，和全球的数据中心，这直接杀爆了。
+57G/元的价格放到 VPS 领域，可以说是中等水平，不算便宜，毕竟还有无限流量，俄罗斯 VPS 什么的不是？但是考虑到线路的水平，和全球的数据中心，这直接杀爆了。
 
-CloudFlare的速度也不是什么俄罗斯小鸡可以比的，如果是CN2这样的高级线路，那这个价格肯定是买不到的。
+CloudFlare 的速度也不是什么俄罗斯小鸡可以比的，如果是 CN2 这样的高级线路，那这个价格肯定是买不到的。
 
 ## Workers JS
 
-使用方法很简单，基本上就是JavaScript。
+使用方法很简单，基本上就是 JavaScript。
 
 我们小小构造一下，
 
@@ -98,21 +98,21 @@ addEventListener(
 )
 ```
 
-逻辑说白了就是返回以https请求收到的请求URL，不过把请求时候发的`hostname`改成`www.gravatar.com`。
+逻辑说白了就是返回以 https 请求收到的请求 URL，不过把请求时候发的`hostname`改成`www.gravatar.com`。
 
 ### Deploy
 
-使用方法也很简单，在CloudFlare的Workers面板新建一个Service。
+使用方法也很简单，在 CloudFlare 的 Workers 面板新建一个 Service。
 
-把上面这个抄到里面，并且Deploy。
+把上面这个抄到里面，并且 Deploy。
 
 ## Custom Domains
 
-默认会给你一个workers.dev的三级域名，如果你想用也完全没有问题，但是我希望设置一个自己的域名。
+默认会给你一个 workers.dev 的三级域名，如果你想用也完全没有问题，但是我希望设置一个自己的域名。
 
-我们进入Service，到Trigger，点Add Custom Domains，输入你需要的域名。
+我们进入 Service，到 Trigger，点 Add Custom Domains，输入你需要的域名。
 
-比如我选择gravatar.jamesflare.com，那就输入`gravatar.jamesflare.com`。
+比如我选择 gravatar.jamesflare.com，那就输入`gravatar.jamesflare.com`。
 
 ## Testing
 
@@ -128,7 +128,7 @@ addEventListener(
 
 这属于衍生部分，其实过程相对曲折，而且不同主题可能还不一样，所以我希望记录一下思路而不是直接说结果，毕竟方案可能不通用。
 
-我用的主题是FixIt，约等于LoveIt。
+我用的主题是 FixIt，约等于 LoveIt。
 
 ### Find Template File
 
@@ -196,17 +196,17 @@ addEventListener(
 {{- end -}}
 ```
 
-可以看见它判定配置文件params项下gravatar子项，Host项下的值。
+可以看见它判定配置文件 params 项下 gravatar 子项，Host 项下的值。
 
-如果Host项是空，则默认`www.gravatar.com`。
+如果 Host 项是空，则默认`www.gravatar.com`。
 
-那么很简单，有两种思路，一个是修改这个HTML模板本身，还有一个思路是修改配置文件的值。
+那么很简单，有两种思路，一个是修改这个 HTML 模板本身，还有一个思路是修改配置文件的值。
 
 ### Make .toml Config
 
 我选第二种。
 
-我的配置文件是.toml格式的，稍微构造一下。
+我的配置文件是 .toml 格式的，稍微构造一下。
 
 ```toml
 [params]
@@ -222,18 +222,18 @@ addEventListener(
 hugo server -D -e production --disableFastRender
 ```
 
-打开浏览器访问`http://localhost:1313/`，查看一下HTML源码有关部分。
+打开浏览器访问`http://localhost:1313/`，查看一下 HTML 源码有关部分。
 
 ```html
 data-src="https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32&amp;d="
 data-srcset="https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32&amp;d=, https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32&amp;d= 1.5x, https://gravatar.jamesflare.com/avatar/75cea16f157b9c5da5435379ab6cf294?s=32&amp;d= 2x"
 ```
 
-可以看到已经改过来了，通过浏览器开发工具Sources栏也可以验证。
+可以看到已经改过来了，通过浏览器开发工具 Sources 栏也可以验证。
 
 ### Others
 
-小插曲，FixIt的配置文件原来已经有这项了，小丑原来是我自己，不过全网都搜不到，哭了。
+小插曲，FixIt 的配置文件原来已经有这项了，小丑原来是我自己，不过全网都搜不到，哭了。
 
 ```toml
 [params]

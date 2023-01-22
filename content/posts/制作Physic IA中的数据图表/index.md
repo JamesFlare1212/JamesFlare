@@ -1,12 +1,12 @@
 ---
-title: "制作Physic IA中的数据图表"
+title: "制作 Physic IA 中的数据图表"
 subtitle: ""
 date: 2023-01-16T14:14:32+08:00
 draft: false
 author: "James"
-authorLink: "https://jamesflare.com"
+authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: ""
+description: "使用 Excel 绘制满足 IB Physic IA 的数据图表。在写 Physic IA（Internal Assessment）的时候，大家可能发现数据图表的评分挺复杂，你需要不少的内容才能获得满分数据图表。"
 keywords: ["Excel","Physic IA","Internal Assessment"]
 license: ""
 comment: false
@@ -20,7 +20,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: "使用Excel绘制满足IB Physic IA的数据图表"
+summary: "使用 Excel 绘制满足 IB Physic IA 的数据图表。在写 Physic IA（Internal Assessment）的时候，大家可能发现数据图表的评分挺复杂，你需要不少的内容才能获得满分数据图表。"
 resources:
 - name: featured-image
   src: featured-image.jpg
@@ -44,7 +44,7 @@ repost:
 
 ## Introduction
 
-在写Physic IA（Internal Assessment）[^10]的时候，大家可能发现数据图表的评分挺复杂。
+在写 Physic IA（Internal Assessment）[^10]的时候，大家可能发现数据图表的评分挺复杂。
 
 你需要不少的内容才能获得满分数据图表[^9]，
 
@@ -54,14 +54,14 @@ repost:
 - The Numerical Value of Intercept
 - The Correlation Coefficient
 
-不过也并不是非常困难，我们使用Excel就能完成这个任务。
+不过也并不是非常困难，我们使用 Excel 就能完成这个任务。
 
 [^9]: 此内容来源于 [引用1](https://www.gradepod.com/blog/the-exact-structure-and-subtitles-you-should-use-in-your-ib-physics-internal-assessment)
-[^10]: IA的全称是Internal Assessment
+[^10]: IA的全称是 Internal Assessment
 
 ***
 
-明确一下我们要在Excel里绘制的内容，
+明确一下我们要在 Excel 里绘制的内容，
 
 - 离散图（Scatter）
 - 数据点（Plot Markers）
@@ -74,7 +74,7 @@ repost:
 - 最差贴合下限曲线（Min Fit Line）
 - 曲线的公式（Equations）
 
-至此就翻译成一个ICT方面的任务了。
+至此就翻译成一个 ICT 方面的任务了。
 
 ## Excel
 
@@ -108,7 +108,7 @@ repost:
 
 在这个例子里，实验重复了三次（实际中可能不够，我们只做一个演示）。
 
-且定实验的目的是证明某个东西的温度变化和时间成正比例，$Temperature \propto Time$，也就是我们最后应该得到一个Linear的图像。
+且定实验的目的是证明某个东西的温度变化和时间成正比例，$Temperature \propto Time$，也就是我们最后应该得到一个 Linear 的图像。
 
 ## Example Scatter
 
@@ -141,13 +141,13 @@ Check List，到现在为止，我们完成了，
 
 ***
 
-首先我们需要把数据导入Excel，
+首先我们需要把数据导入 Excel，
 
 {{< image src="enterDataIntoExcel.webp" width="100%" caption="Enter Data Into Excel" >}}
 
-这其实不太讲究，实在不行一个一个手打也行，这里我用[Example Data](#example-data)里的数据。
+这其实不太讲究，实在不行一个一个手打也行，这里我用 [Example Data](#example-data) 里的数据。
 
-再次提醒，在真实的IA中，建议有5次重复的实验的数据，3次可能不够，我们这里只是演示ICT技术用，无需过多要求。
+再次提醒，在真实的 IA 中，建议有 5 次重复的实验的数据，3 次可能不够，我们这里只是演示 ICT 技术用，无需过多要求。
 
 可能会好奇，这里有多列数据怎么办？一种方法是把他们重新组织合并成两列，但是这样有多列也不要紧，我选择的方法是第二种，选择数据源`Data Source`的时候指定多列，这部分在后面有详细讲述。
 
@@ -170,7 +170,7 @@ Check List，到现在为止，我们完成了，
 
 ***
 
-选一个对的图表类型是很重要的，绝大多数情况我们需要的是Scatter（离散图）。
+选一个对的图表类型是很重要的，绝大多数情况我们需要的是 Scatter（离散图）。
 
 {{< image src="insertScatterGraph.webp" width="100%" caption="Insert Scatter Graph" >}}
 
@@ -211,7 +211,7 @@ Check List，到现在为止，我们完成了，
 
 `Select Data Source`选择数据源界面是帮助我们标定所需绘制的数据的。
 
-可以看到原先是自动把3组数据分成了3个分离的`Series`集。而我们希望它们都在一个`Series`里，这样就拥有统一的颜色。
+可以看到原先是自动把 3 组数据分成了 3 个分离的`Series`集。而我们希望它们都在一个`Series`里，这样就拥有统一的颜色。
 
 首先点击`Remove`移除原先的所有数据集，然后我们选择`Add`添加。
 
@@ -219,13 +219,13 @@ Check List，到现在为止，我们完成了，
 
 它会询问你`Series`名，`Series X Values`,`Series Y Values`。
 
-这里我希望X轴是时间，Y轴是温度。注意的是，选择多个Table时可以按住`Ctrl`按键，框选多个列表。MacOS可能是`Command`键。你也可以选择手动整合多个列表。每个Sheet之间用`,`作为分割。其实在你使用`Ctrl`多选时，Excel自动帮你做好了这件事。
+这里我希望 X 轴是时间，Y 轴是温度。注意的是，选择多个 Table 时可以按住`Ctrl`按键，框选多个列表。MacOS 可能是`Command`键。你也可以选择手动整合多个列表。每个 Sheet 之间用`,`作为分割。其实在你使用`Ctrl`多选时，Excel 自动帮你做好了这件事。
 
 ```txt
 =(Sheet1!$B$3:$B$18,Sheet1!$D$3:$D$18,Sheet1!$F$3:$F$18)
 ```
 
-这是Example中所用的表达公式。可以看见，结构是，
+这是 Example 中所用的表达公式。可以看见，结构是，
 
 ```txt
 =(列表1,列表2,列表3)
@@ -241,7 +241,7 @@ Check List，到现在为止，我们完成了，
 
 {{< image src="checkSelectedScatterGraphDataSource.webp" width="100%" caption="Check Selected Scatter Graph Data Source" >}}
 
-到这，3个项`Series`名，`Series X Values`,`Series Y Values`都填写好了。
+到这，3 个项`Series`名，`Series X Values`,`Series Y Values`都填写好了。
 
 `Series`名是可选的，但是为了方便区分，还是建议大家填一个。
 
@@ -278,11 +278,11 @@ Check List，到现在为止，我们完成了，
 
 {{< image src="changeXErrorBar.webp" width="100%" caption="Select X Error Bar" >}}
 
-点击图表中的误差线打开菜单。如果没到正确的地方，可以手动选择，这里我们先处理X轴方向的误差框。
+点击图表中的误差线打开菜单。如果没到正确的地方，可以手动选择，这里我们先处理 X 轴方向的误差框。
 
 {{< image src="changeXErrorBarFixedValue.webp" width="100%" caption="Config X Error Bar Fixed Value" >}}
 
-X轴在Example中是Time时间，Time时间的误差范围我们先前在表格中有体现（省去数值）。
+X 轴在 Example 中是 Time 时间，Time 时间的误差范围我们先前在表格中有体现（省去数值）。
 
 |Temperature / ℃ ±5|Time / s ±2|
 |:-------------------:|:-----------:|
@@ -293,10 +293,10 @@ Time的误差为±2，这里为了效果定了一个很高的数值，实际不�
 ***
 
 {{< admonition type=note title="提醒" open=true >}}
-接下来很长一段都是讲述Uncertainties​的内容，如果你自认为完全理解，那么可以跳过，直接到Error Bar设置部分。
+接下来很长一段都是讲述 Uncertainties​ 的内容，如果你自认为完全理解，那么可以跳过，直接到 Error Bar 设置部分。
 {{< /admonition >}}
 
-这可能是要经过计算的，我想这在正常的IB Physic课程中有所讲述，
+这可能是要经过计算的，我想这在正常的 IB Physic 课程中有所讲述，
 
 > Topic 1: Measurement and Uncertainties​
 
@@ -318,7 +318,7 @@ Time的误差为±2，这里为了效果定了一个很高的数值，实际不�
 >
 > Percentage Uncertainty: $\cfrac{\Delta x}{x} \times 100 \\%$
 
-如果我的数据是计算出来的，比如我实验测电流（$I$）[^3]和电压（$V$）[^4]，但是我图表要绘制功率（$P$）[^5]。那么功率（$P$）的Error Bar要怎么绘制呢？
+如果我的数据是计算出来的，比如我实验测电流（$I$）[^3]和电压（$V$）[^4]，但是我图表要绘制功率（$P$）[^5]。那么功率（$P$）的 Error Bar 要怎么绘制呢？
 
 ***
 
@@ -355,15 +355,15 @@ Time的误差为±2，这里为了效果定了一个很高的数值，实际不�
 > 
 > Uncertainty: $\cfrac{\Delta y}{y} = \| n \| \bigg( \cfrac{\Delta a}{a} \bigg)$ (\|n\| times of fractional uncertainty)
 
-这样的话就属于**Multiplication/Division**，重新构造一下公式，把我们的 $P = IV$ 纳入。
+这样的话就属于 **Multiplication/Division**，重新构造一下公式，把我们的 $P = IV$ 纳入。
 
 这样就得到了 $\cfrac{\Delta P}{P} = \cfrac{\Delta I}{I} + \cfrac{\Delta V}{V}$。
 
 ***
 
-接下来我们得到 $\Delta I$ 和 $\Delta V$ 就可以算出 $\Delta P$ 了。而这两个的值一般取决于仪表，如果制造商没有标注，那就是最后一位读数的精度。不过有些例外，比如实验中是通过人来掐秒表计时，那么公认的人类反应时间是200毫秒，即使秒表再精准，也不该使用标注值，应该使用 $\pm 200 ms $ 作为Uncertainty。永远**使用最不准的一个来作为衡量**。
+接下来我们得到 $\Delta I$ 和 $\Delta V$ 就可以算出 $\Delta P$ 了。而这两个的值一般取决于仪表，如果制造商没有标注，那就是最后一位读数的精度。不过有些例外，比如实验中是通过人来掐秒表计时，那么公认的人类反应时间是 200 毫秒，即使秒表再精准，也不该使用标注值，应该使用 $\pm 200 ms $ 作为 Uncertainty。永远**使用最不准的一个来作为衡量**。
 
-注意，制造商可能会标注 $\pm 1 \\%$ 这样的数值，那么它本身就是Percentage Uncertainty，直接把它转换为Fractional Uncertainty即可，还记得上方的 $\cfrac{\Delta P}{P} = \cfrac{\Delta I}{I} + \cfrac{\Delta V}{V}$ 吗？它的RHS[^1]中，每一个项和上面展示的Fractional Uncertainty公式 $\cfrac{\Delta x}{x}$ 完全一样。如果不明白两个之间是怎么转换的，为什么就可以直接用了？那么想想，我们说的百分比%，是不是就是百分之几，$\cfrac{x}{100}$ 的意思？
+注意，制造商可能会标注 $\pm 1 \\%$ 这样的数值，那么它本身就是 Percentage Uncertainty，直接把它转换为 Fractional Uncertainty 即可，还记得上方的 $\cfrac{\Delta P}{P} = \cfrac{\Delta I}{I} + \cfrac{\Delta V}{V}$ 吗？它的 RHS[^1]中，每一个项和上面展示的 Fractional Uncertainty 公式 $\cfrac{\Delta x}{x}$ 完全一样。如果不明白两个之间是怎么转换的，为什么就可以直接用了？那么想想，我们说的百分比 %，是不是就是百分之几，$\cfrac{x}{100}$ 的意思？
 
 同时也不要搞混了，$\Delta x$ 的意思是 $x$ 的变化，比如 $+ 1$，$- 1$ 或者 $\pm 1$。而 $\pm 1 \\%$ 显然不能算数。
 
@@ -371,13 +371,13 @@ Time的误差为±2，这里为了效果定了一个很高的数值，实际不�
 
 ***
 
-假设我们使用的电流表的标注是 $\pm 1 \\%$（这在现实中不太可能发生，为了演示）。同时假设电压表没有标注，但是它是数字式的，某个读数长这样 $1145.14 V$，那么它的Uncertainty就是 $\pm 0.01 A$。
+假设我们使用的电流表的标注是 $\pm 1 \\%$（这在现实中不太可能发生，为了演示）。同时假设电压表没有标注，但是它是数字式的，某个读数长这样 $1145.14 V$，那么它的 Uncertainty 就是 $\pm 0.01 A$。
 
 最后假设现在某一组数据的值是 $I = 2.01$，$V = 1.51$，通过 $P = IV$ 得到 $P = 3.0351$。这显然是不正确的，因为有效数字位数（Significant Figures）[^6]，和精度都对不上。换一句话说，它缺少误差（Uncertainty）。
 
-要算出Uncertainty，把内容带入公式，得到 $\cfrac{\Delta P}{3.0351} = \cfrac{1}{100} + \cfrac{0.01}{1.51}$。如果你计算正确的话，就会得到 $\Delta P = 0.05045$。但是不能直接写 $P = 3.0351 \pm 0.05045 W$，这样是不对的，因为有效数字（Significant Figures）的位数不正确。
+要算出 Uncertainty，把内容带入公式，得到 $\cfrac{\Delta P}{3.0351} = \cfrac{1}{100} + \cfrac{0.01}{1.51}$。如果你计算正确的话，就会得到 $\Delta P = 0.05045$。但是不能直接写 $P = 3.0351 \pm 0.05045 W$，这样是不对的，因为有效数字（Significant Figures）的位数不正确。
 
-[^6]: 有效数字位数的英文为 Significant Figures
+[^6]: 有效数字位数的英文为 Significant Figures。
 
 ***
 
@@ -406,21 +406,21 @@ Time的误差为±2，这里为了效果定了一个很高的数值，实际不�
 
 ***
 
-是不是兴奋地以为把 0.05 填到Excel里就万事大吉了？哈哈，小子，还没结束，希望心态别炸。
+是不是兴奋地以为把 0.05 填到 Excel 里就万事大吉了？哈哈，小子，还没结束，希望心态别炸。
 
-这只是一个数值，而画图用的是图表，显然我们不太能给每一个点设置Error Bar，所以我们用的是图表中，所有值的一个普遍的Uncertainty，也就是表格顶端所标注的。
+这只是一个数值，而画图用的是图表，显然我们不太能给每一个点设置 Error Bar，所以我们用的是图表中，所有值的一个普遍的 Uncertainty，也就是表格顶端所标注的。
 
 |Temperature / ℃ ±5|Time / s ±2|
 |:-------------------:|:-----------:|
 |\<Value\>|\<Value\>|
 
-在我的例子中，很简单，因为这两个数值是我测量得来的，而且是一个Absolute Uncertainty，直接照抄，搬入Excel的`Error Amount`，`Fixed Value`即可。可是如果我们的Uncertainty是一个Percentage Uncertainty，或者这个项是计算出来的，而非直接测量获得的。比如说上文举例的功率，它就是由两个原始测量值相乘获得的，这样每个数值的Absolute Uncertainty都不一样。那我们怎么确立，像Temperature / ℃ ±5中，±5一样的Uncertainty填入Excel中呢？
+在我的例子中，很简单，因为这两个数值是我测量得来的，而且是一个 Absolute Uncertainty，直接照抄，搬入 Excel 的`Error Amount`，`Fixed Value`即可。可是如果我们的 Uncertainty 是一个 Percentage Uncertainty，或者这个项是计算出来的，而非直接测量获得的。比如说上文举例的功率，它就是由两个原始测量值相乘获得的，这样每个数值的 Absolute Uncertainty 都不一样。那我们怎么确立，像 Temperature / ℃ ±5 中，±5 一样的 Uncertainty 填入 Excel 中呢？
 
-不急，我们可以先统计每一个数值的Absolute Uncertainty，再计算最大值和最小值之间的差，然后除以2，也就是所谓的Half Range。
+不急，我们可以先统计每一个数值的 Absolute Uncertainty，再计算最大值和最小值之间的差，然后除以 2，也就是所谓的 Half Range。
 
-什么意思呢，比如我有{1,1,2,3,1,4,2,4}这几个值，那它们的Half Range就是 $(4 - 1) \div 2 = 1.5$。
+什么意思呢，比如我有 {1,1,2,3,1,4,2,4} 这几个值，那它们的 Half Range 就是 $(4 - 1) \div 2 = 1.5$。
 
-什么？你说我之前算一个 $P = 3.04 \pm 0.05 W$ 得到它 0.05 的Absolute Uncertainty就花了那么多功夫，我要是有几十，上百个数值岂不是要我命？非也非也，Excel可以轻松帮助你计算，当然这是ICT知识了，完全讲述一边又是一篇文章了，我就稍微给点思路，还是用刚才的功率计算为例。
+什么？你说我之前算一个 $P = 3.04 \pm 0.05 W$ 得到它 0.05 的 Absolute Uncertainty 就花了那么多功夫，我要是有几十，上百个数值岂不是要我命？非也非也，Excel 可以轻松帮助你计算，当然这是 ICT 知识了，完全讲述一边又是一篇文章了，我就稍微给点思路，还是用刚才的功率计算为例。
 
 随便创造一个数据
 
@@ -430,7 +430,7 @@ Time的误差为±2，这里为了效果定了一个很高的数值，实际不�
 |1.35|1.32|
 |1.21|1.42|
 
-接下来可以另起一列，定为功率的Uncertainty
+接下来可以另起一列，定为功率的 Uncertainty
 
 |Current / A ± 1%|Voltage / V ± 0.01|Uncertainty for Power|
 |:----|:----|:----|
@@ -438,7 +438,7 @@ Time的误差为±2，这里为了效果定了一个很高的数值，实际不�
 |1.35|1.32| |
 |1.21|1.42| |
 
-那么，我们的计算本质上是什么？是 $\cfrac{\Delta P}{P} = \cfrac{\Delta I}{I} + \cfrac{\Delta V}{V}$。重新构造一下，把我们要的 $\Delta P$ 挪至LHS[^8]。
+那么，我们的计算本质上是什么？是 $\cfrac{\Delta P}{P} = \cfrac{\Delta I}{I} + \cfrac{\Delta V}{V}$。重新构造一下，把我们要的 $\Delta P$ 挪至 LHS[^8]。
 
 [^8]: LHS（Left Hand Side）
 
@@ -450,7 +450,7 @@ $\cfrac{\Delta I}{I}$，$I$，$\Delta V$ 和 $V$ 我们都可以从图表中获�
 
 ***
 
-在Excel里，我们重新构造一下，就有了
+在 Excel 里，我们重新构造一下，就有了
 
 ```txt
 =((1%)+(0.01/B2))*(A2*B2)
@@ -471,15 +471,15 @@ $\cfrac{\Delta I}{I}$，$I$，$\Delta V$ 和 $V$ 我们都可以从图表中获�
 
 ***
 
-继续我们的主题，接下来设置Y轴的Error Bar，先从菜单切换对象。
+继续我们的主题，接下来设置 Y 轴的 Error Bar，先从菜单切换对象。
 
 {{< image src="changeYErrorBar.webp" width="100%" caption="Change Y Error Bar" >}}
 
-接下来和X轴的操作别无二致，设置好相关选项。
+接下来和 X 轴的操作别无二致，设置好相关选项。
 
 {{< image src="changeYErrorBarFixedValue.webp" width="100%" caption="Change Y Error Bar Fixed Value" >}}
 
-这里我Temperature的Absolute Uncertainty是±5，设置`Fixed Value`为5，因为是±，所以方向是Both，这样就完成了。
+这里我 Temperature 的 Absolute Uncertainty 是 ±5，设置`Fixed Value`为 5，因为是 ±，所以方向是 Both，这样就完成了。
 
 ### Add Axis Titles
 
@@ -554,7 +554,7 @@ Check List，到现在为止，我们完成了，
 
 ***
 
-在添加之前我们先要计算出Max Fit Line，Min Fit Line.
+在添加之前我们先要计算出 Max Fit Line，Min Fit Line.
 
 {{< image src="calculateMaxFitPoints.webp" width="100%" caption="Calculate Max Fit Points" >}}
 
@@ -580,7 +580,7 @@ Check List，到现在为止，我们完成了，
 
 {{< image src="addFitLineDataSource.webp" width="100%" caption="Add Fit Line Data Source" >}}
 
-在算完两条线，四个点，八个值后，把这两组数据分别加入图表，可以参照[Config Best Fit Data](#config-best-fit-data)章节操作。
+在算完两条线，四个点，八个值后，把这两组数据分别加入图表，可以参照 [Config Best Fit Data](#config-best-fit-data) 章节操作。
 
 {{< image src="checkDataSource.webp" width="100%" caption="Check Data Source" >}}
 
@@ -590,7 +590,7 @@ Check List，到现在为止，我们完成了，
 
 {{< image src="addTrendlines.webp" width="100%" caption="Add Trendlines" >}}
 
-而添加曲线也很简单，Excel把它称作趋势线（Trendline）。
+而添加曲线也很简单，Excel 把它称作趋势线（Trendline）。
 
 瞄准数据点右键，`Add Trendline`即可。
 
@@ -621,7 +621,7 @@ Check List，到现在为止，我们完成了，
 
 如法炮制，把剩下几个曲线也添加完，然后双击编辑公式的文本框，在它们前面加上标注。
 
-顺手把底下不需要的Label删除。
+顺手把底下不需要的 Label 删除。
 
 ### Ending Work
 
@@ -648,7 +648,7 @@ Check List，到现在为止，我们完成了，
 
 ## Source File
 
-这是Excel原文件，可以拿去研究
+这是 Excel 原文件，可以拿去研究
 
 {{< link href="example.xlsx" content="example.xlsx" title="Download example.xlsx" download="example.xlsx" card=true >}}
 

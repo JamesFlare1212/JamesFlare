@@ -1,27 +1,26 @@
 ---
-title: "我们该报补习班吗"
+title: "使用 Docker 部署 github-readme-stats"
 subtitle: ""
-date: 2023-01-19T10:00:18+08:00
+date: 2023-01-23T00:12:56+08:00
 draft: true
 author: "James"
 authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: ""
+description: "github-readme-stats 官方给了你在 Vercel 中部署的选项，不过如果你要在自己服务器，或者别的平台上部署呢？那么也不是没有办法，以下是我的解决方案和讨论。"
 keywords: ""
 license: ""
 comment: false
 weight: 0
 
 tags:
-- TOEFL
-- Subjects
+- draft
 categories:
-- Thinks
+- draft
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: "同学们可能面临TOEFL，IELTS以及IGCSE，A-Level，IB等学科的学习问题，不少人可能建议你报班，我是怎么看的。"
+summary: "github-readme-stats 官方给了你在 Vercel 中部署的选项，不过如果你要在自己服务器，或者别的平台上部署呢？那么也不是没有办法，以下是我的解决方案和讨论。"
 resources:
 - name: featured-image
   src: featured-image.jpg
@@ -43,4 +42,4 @@ repost:
 # See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
 ---
 
-## 前言
+## Introduction

@@ -4,9 +4,9 @@ subtitle: ""
 date: 2023-01-13T13:44:52+08:00
 draft: false
 author: "James"
-authorLink: "https://jamesflare.com"
+authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: ""
+description: "本文是基于论文 Detecting Photoshopped Faces by Scripting Photoshop 的复现与使用，原始团队在 GitHub 上公布了代码，我们可以非常简单的在本地部署。你好奇你的小伙伴们有没有 PS 自己的照片吗？"
 keywords: "FALDetector"
 license: ""
 comment: false
@@ -22,7 +22,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: "本文是基于论文Detecting Photoshopped Faces by Scripting Photoshop的复现与使用"
+summary: "本文是基于论文 Detecting Photoshopped Faces by Scripting Photoshop 的复现与使用，原始团队在 GitHub 上公布了代码，我们可以非常简单的在本地部署。你好奇你的小伙伴们有没有 PS 自己的照片吗？"
 resources:
 - name: featured-image
   src: featured-image.jpg
@@ -46,7 +46,7 @@ repost:
 
 ## 前言
 
-本文是基于论文Detecting Photoshopped Faces by Scripting Photoshop的复现与使用，原始团队在GitHub上公布了代码，我们可以非常简单的在本地部署。
+本文是基于论文 Detecting Photoshopped Faces by Scripting Photoshop 的复现与使用，原始团队在 GitHub 上公布了代码，我们可以非常简单的在本地部署。
 
 标题有些吸引眼球的意思了，看上去似乎是个社会学文章，其实是技术文章。
 
@@ -74,13 +74,13 @@ If you find this useful for your research, please consider citing this [bibtex](
 
 ### Windows
 
-在Windows上面部署，和在Linux上差不多，只有一点点不同。
+在 Windows 上面部署，和在 Linux 上差不多，只有一点点不同。
 
 #### Anaconda Shell
 
-首先我们需要安装[Anaconda](https://www.anaconda.com/)，这一过程没什么困难的，就跳过了。
+首先我们需要安装 [Anaconda](https://www.anaconda.com/)，这一过程没什么困难的，就跳过了。
 
-之后打开Anaconda Prompt (anaconda3)
+之后打开 Anaconda Prompt (anaconda3)
 
 {{< image src="anaconda3CLIIcon.webp" caption="Anaconda 3" width="300px" >}}
 
@@ -90,13 +90,13 @@ If you find this useful for your research, please consider citing this [bibtex](
 (base) C:\Users\James>
 ```
 
-不过它默认用的是Windows默认的cmd.exe，
+不过它默认用的是 Windows 默认的 cmd.exe，
 
-我不是很喜欢，我用的是WezTerm。
+我不是很喜欢，我用的是 WezTerm。
 
 所以需要一点额外操作，
 
-这个Anaconda Prompt (anaconda3)快捷方式是以下内容
+这个 Anaconda Prompt (anaconda3) 快捷方式是以下内容
 
 ```bash
 %windir%\System32\cmd.exe "/K" C:\Users\James\anaconda3\Scripts\activate.bat C:\Users\James\anaconda3
@@ -119,7 +119,7 @@ C:\Users\James\anaconda3\Scripts\activate.bat C:\Users\James\anaconda3
 
 效果是差不多的。
 
-我们之后的命令都需要在这里面操作，当报错的时候请检查是不是在Anaconda Prompt (anaconda3)里进行的。
+我们之后的命令都需要在这里面操作，当报错的时候请检查是不是在 Anaconda Prompt (anaconda3) 里进行的。
 
 #### Anaconda Channels
 
@@ -141,7 +141,7 @@ conda config --set show_channel_urls yes
 
 #### Environment
 
-之后我们需要在Anaconda里创建一个虚拟环境，这里取名为`FALD`。
+之后我们需要在 Anaconda 里创建一个虚拟环境，这里取名为`FALD`。
 
 ```bash
 conda create -n FALD python=3.6
@@ -149,7 +149,7 @@ conda create -n FALD python=3.6
 
 这一步可能会消耗一点时间，
 
-它会安装一些必要组件，conda询问时记得同意,
+它会安装一些必要组件，conda 询问时记得同意,
 
 输入`yes` + Enter。
 
@@ -159,15 +159,15 @@ conda create -n FALD python=3.6
 conda activate FALD
 ```
 
-记住，往后我们每次要对FALdetector进行操作的时候都要进入这个环境。
+记住，往后我们每次要对 FALdetector 进行操作的时候都要进入这个环境。
 
 #### Work Path
 
 之后我们需要按照论文里的指示，配置环境
 
-首先，需要拉取源码，位于[GitHub FALdetector](https://github.com/PeterWang512/FALdetector)
+首先，需要拉取源码，位于 [GitHub FALdetector](https://github.com/PeterWang512/FALdetector)
 
-不过我为大家准备了处理好的版本，位于[FALdetector]()
+不过我为大家准备了处理好的版本，位于 [FALdetector]()
 
 这是因为，你需要人工下载两个东西，一个是模型，一个是测试集。
 
@@ -176,7 +176,7 @@ conda activate FALD
 - download_weights.sh
 - download_valset.sh
 
-不过shell脚本在Windows上并不好配置，我们只能手动下载了。
+不过 Shell 脚本在 Windows 上并不好配置，我们只能手动下载了。
 
 如果你有动手能力，那也可以手动地把这两个东西下到位。
 
@@ -188,7 +188,7 @@ https://drive.jamesflare.com/api/v3/file/get/86171/FALdetector.7z?sign=aErdfOxvX
 
 新建一个文件夹，然后在放入解压的文件之前，
 
-启用Windows区分大小写功能
+启用 Windows 区分大小写功能
 
 ```bash
 fsutil.exe file SetCaseSensitiveInfo 文件夹位置 enable
@@ -196,9 +196,9 @@ fsutil.exe file SetCaseSensitiveInfo 文件夹位置 enable
 
 这是保险起见，不做应该也没问题，
 
-请在一个新的cmd窗口以管理员执行。
+请在一个新的 CMD 窗口以管理员执行。
 
-下载后我们解压到那个启用Windows区分大小写功能的文件夹，
+下载后我们解压到那个启用 Windows 区分大小写功能的文件夹，
 
 这里我放到桌面。
 
@@ -220,7 +220,7 @@ cd C:\Users\James\Desktop\FALdetector
 
 接下来我们需要配置一下依赖，
 
-在用pip安装的时候，我选择了使用镜像来加速
+在用 pip 安装的时候，我选择了使用镜像来加速
 
 使用以下参数
 
@@ -230,7 +230,7 @@ cd C:\Users\James\Desktop\FALdetector
 
 注意，需要在环境`FALD`下操作
 
-安装cmake
+安装 cmake
 
 ```bash
 pip install cmake -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -262,7 +262,7 @@ pip install mmcv scipy numpy matplotlib opencv_python Pillow -i https://pypi.tun
 - global_classifier.py
 - local_detector.py
 
-global_classifier.py用于给出概率，输出类似
+global_classifier.py 用于给出概率，输出类似
 
 ```txt
 Probibility being modified by Photoshop FAL: 98.82%
@@ -296,15 +296,15 @@ python local_detector.py --input_path "输入文件" --model_path weights/local.
 (FALD) C:\Users\James\Desktop\FALdetector>python local_detector.py --input_path "examples/sampleVivanLi (154).jpg" --model_path weights/local.pth --dest_folder out/
 ```
 
-然后我们就可以在out文件夹下找到生成的三张图片了
+然后我们就可以在 out 文件夹下找到生成的三张图片了
 
 {{< image src="heatmapVivanLi154.webp" caption="Vivan Li 154 Heatmap" width="400px" >}}
 
-第一张是dlib识别并裁切的人像，也是FALdetector的输入文件，
+第一张是 dlib 识别并裁切的人像，也是 FALdetector 的输入文件，
 
-第二张是FALdetector生成的热力图，体现了AI对光流场的预测，显示了潜在的篡改区域，
+第二张是 FALdetector 生成的热力图，体现了 AI 对光流场的预测，显示了潜在的篡改区域，
 
-第三张是FALdetector基于预测结果，尝试对图像进行的还原。
+第三张是 FALdetector 基于预测结果，尝试对图像进行的还原。
 
 根据我的观察，他们有些很准，有些还是比较困难，颜色，像素，光照都很影响结果。
 
@@ -312,7 +312,7 @@ python local_detector.py --input_path "输入文件" --model_path weights/local.
 
 ## 额外
 
-额外我还找了个叫Asshiteru的人的图像，这是其中一张
+额外我还找了个叫 Asshiteru 的人的图像，这是其中一张
 
 ```txt
 (FALD) C:\Users\James\Desktop\FALdetector>python global_classifier.py --input_path "examples/aishiteruSample (36).jpg" --model_path weights/global.pth
@@ -338,17 +338,17 @@ https://drive.jamesflare.com/api/v3/file/get/86170/FALDAsshiteru.zip?sign=9G5oCp
 
 ## 总结
 
-这无疑给我们提供了一个全新的视角，在此之前我认为Vivan的图像应该大部分是被篡改过的，但是现在我改变主意了。
+这无疑给我们提供了一个全新的视角，在此之前我认为 Vivan 的图像应该大部分是被篡改过的，但是现在我改变主意了。
 
-330个样本里，拥有明显痕迹的也就20+。
+330 个样本里，拥有明显痕迹的也就 20+。
 
-87%+以上都是几乎原图，这与我们的主观严重不符。
+87%+ 以上都是几乎原图，这与我们的主观严重不符。
 
-或许很少有人会有把一个人300+张图像放在一起观察的机会，
+或许很少有人会有把一个人 300+ 张图像放在一起观察的机会，
 
-但是对我而言，依然有数张图像我认为是非常好看的，比如Sample13，而且Probibility being modified by Photoshop FAL的值非常低。
+但是对我而言，依然有数张图像我认为是非常好看的，比如 Sample13，而且 Probibility being modified by Photoshop FAL 的值非常低。
 
-可见，PS技术可能并没有起到确定性作用，更多的还是构图和摄影技术。
+可见，PS 技术可能并没有起到确定性作用，更多的还是构图和摄影技术。
 
 Asshiteru，我对她是谁，几乎没有概念。
 
@@ -358,7 +358,7 @@ Asshiteru，我对她是谁，几乎没有概念。
 
 ## 缺点
 
-这个项目是Adobe资助的，3年了，他们也没有放出模型训练的细节和源码，可能有一些商业的考量在里面吧。
+这个项目是 Adobe 资助的，3 年了，他们也没有放出模型训练的细节和源码，可能有一些商业的考量在里面吧。
 
 带来的结果就是有不少局限性。
 
@@ -370,4 +370,4 @@ Asshiteru，我对她是谁，几乎没有概念。
 
 ## 预告
 
-我们爬取了Instagram上一部分，30位博主，大约22,000张图像，一个更大样本的社会学研究，测试正在进行。
+我们爬取了 Instagram 上一部分，30 位博主，大约 22,000 张图像，一个更大样本的社会学研究，测试正在进行。

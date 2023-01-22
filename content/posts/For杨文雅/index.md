@@ -4,10 +4,10 @@ subtitle: "祝你上大学拉"
 date: 2023-01-13T19:45:45+08:00
 draft: false
 author: "James"
-authorLink: "https://jamesflare.com"
+authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: ""
-keywords: "杨文雅"
+description: "给杨文雅的贺卡，恭喜你上大学了，很高兴认识你！本页是一份现代化的贺卡，不出意外你将通过二维码扫描获得。不同于普通的文本，这是富文本，当然我个人还是喜欢戏称其为肥文本。"
+keywords: ["杨文雅","贺卡","大学"]
 license: ""
 comment: false
 weight: 0
@@ -21,7 +21,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: "给杨文雅的贺卡，恭喜你上大学了，很高兴认识你！"
+summary: "给杨文雅的贺卡，恭喜你上大学了，很高兴认识你！本页是一份现代化的贺卡，不出意外你将通过二维码扫描获得。不同于普通的文本，这是富文本，当然我个人还是喜欢戏称其为肥文本。"
 resources:
 - name: featured-image
   src: featured-image.jpg
