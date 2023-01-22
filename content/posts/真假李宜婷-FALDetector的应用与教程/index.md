@@ -1,5 +1,5 @@
 ---
-title: "真假李宜婷 FALDetector的应用与教程"
+title: "真假李宜婷 FALDetector 的应用与教程"
 subtitle: ""
 date: 2023-01-13T13:44:52+08:00
 draft: false
