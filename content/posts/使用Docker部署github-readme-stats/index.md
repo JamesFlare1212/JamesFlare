@@ -13,9 +13,14 @@ comment: false
 weight: 0
 
 tags:
-- draft
+- Open Source
+- JavaScript
+- Node.js
+- Docker
 categories:
-- draft
+- Tutorials
+- Sharing
+  - Projects
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
