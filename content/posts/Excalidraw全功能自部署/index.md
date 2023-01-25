@@ -19,6 +19,8 @@ tags:
 - Docker
 categories:
 - Tutorials
+- Sharing
+  - Projects
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
