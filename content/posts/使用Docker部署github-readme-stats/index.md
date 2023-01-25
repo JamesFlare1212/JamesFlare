@@ -1,4 +1,5 @@
 ---
+slug: "github-readme-stats-docker"
 title: "使用 Docker 部署 github-readme-stats"
 subtitle: ""
 date: 2023-01-23T00:12:56+08:00

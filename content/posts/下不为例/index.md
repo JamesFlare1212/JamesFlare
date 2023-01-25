@@ -1,4 +1,5 @@
 ---
+slug: "screet"
 title: "下不为例"
 subtitle: ""
 date: 2023-01-13T18:30:18+08:00

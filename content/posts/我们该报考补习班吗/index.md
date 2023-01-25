@@ -1,4 +1,5 @@
 ---
+slug: "tofel-not"
 title: "我们该报补习班吗"
 subtitle: ""
 date: 2023-01-19T10:00:18+08:00
@@ -43,4 +44,4 @@ repost:
 # See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
 ---
 
-## 前言
+## Introduction

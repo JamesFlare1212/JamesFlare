@@ -1,4 +1,5 @@
 ---
+slug: "cards-wen-welcome-university"
 title: "For 杨文雅"
 subtitle: "祝你上大学拉"
 date: 2023-01-13T19:45:45+08:00
