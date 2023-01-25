@@ -1,4 +1,5 @@
 ---
+slug: "physic-ia-graph-excel"
 title: "制作 Physic IA 中的数据图表"
 subtitle: ""
 date: 2023-01-16T14:14:32+08:00

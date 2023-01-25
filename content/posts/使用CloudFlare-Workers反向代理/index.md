@@ -1,4 +1,5 @@
 ---
+slug: "gravatar-cloudflare-workers"
 title: "使用 CloudFlare Workers 反向代理"
 subtitle: ""
 date: 2023-01-15T21:31:42+08:00

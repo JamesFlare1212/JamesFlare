@@ -1,4 +1,5 @@
 ---
+slug: "excalidraw-full-stack-docker"
 title: "Excalidraw 全功能自部署"
 subtitle: ""
 date: 2023-01-13T15:54:36+08:00

@@ -1,4 +1,5 @@
 ---
+slug: "faldetector-vivian-li"
 title: "真假李宜婷 FALDetector 的应用与教程"
 subtitle: ""
 date: 2023-01-13T13:44:52+08:00
@@ -14,6 +15,7 @@ weight: 0
 
 tags:
 - AI
+- Open Source
 categories:
 - Tutorials
 - Sharing

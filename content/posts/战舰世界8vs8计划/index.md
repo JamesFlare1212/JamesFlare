@@ -1,4 +1,5 @@
 ---
+slug: "wows-8vs8"
 title: "战舰世界 8 VS 8 计划"
 subtitle: ""
 date: 2023-01-14T18:55:52+08:00
