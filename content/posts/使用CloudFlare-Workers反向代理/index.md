@@ -54,11 +54,11 @@ repost:
 
 {{< image src="network-map.svg" width="750px" caption="CloudFlare Network Map" >}}
 
-而[CloudFlare Workers](https://developers.cloudflare.com/workers/learning/how-workers-works/)直接可以在他们就近的数据中心处理，不比随便整一个服务器快多了。
+而 [CloudFlare Workers](https://developers.cloudflare.com/workers/learning/how-workers-works/) 直接可以在他们就近的数据中心处理，不比随便整一个服务器快多了。
 
 ## Pricing
 
-那么，Workers的[价格](https://developers.cloudflare.com/workers/platform/pricing)如何?
+那么，Workers 的[价格](https://developers.cloudflare.com/workers/platform/pricing)如何?
 
 |          | Free plan                  | Paid Plan - Bundled                | Paid plan - Unbound                               |
 | -------- | -------------------------- | ---------------------------------- | ------------------------------------------------- |
