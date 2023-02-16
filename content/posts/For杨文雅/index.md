@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "给杨文雅的贺卡，恭喜你上大学了，很高兴认识你！本页是一份现代化的贺卡，不出意外你将通过二维码扫描获得。不同于普通的文本，这是富文本，当然我个人还是喜欢戏称其为肥文本。"
 keywords: ["杨文雅","贺卡","大学"]
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: ""
 keywords: ""
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

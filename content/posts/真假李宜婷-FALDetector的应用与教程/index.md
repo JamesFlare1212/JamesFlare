@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "本文是基于论文 Detecting Photoshopped Faces by Scripting Photoshop 的复现与使用，原始团队在 GitHub 上公布了代码，我们可以非常简单的在本地部署。你好奇你的小伙伴们有没有 PS 自己的照片吗？"
 keywords: "FALDetector"
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

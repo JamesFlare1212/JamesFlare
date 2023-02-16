@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "体制里的问题就要用体制的方法来解决。当同学们遇到学校的违规行为，包括收费补课，体罚，变相体罚等行为时，该如何捍卫自身的合法权利呢？哪些是优先的手段，哪些又是不推荐的方式？中学生举报学校的正确思路。"
 keywords: ["举报学校","学校违规","中学生"]
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "在 C 语言中，加减乘除是常见的数学运算，但它们使用的运算符与数学中的略有不同，如何在 C 语言中进行加减乘除运算，不同类型参与运算，不同类型的除数和被除数，加减乘除运算的简写。"
 keywords: ""
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:
