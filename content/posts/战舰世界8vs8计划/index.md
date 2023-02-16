@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "战舰世界群友赛 B 队计划，每场比赛最长时间为 20 分钟，若出现平局，则进行重赛，请大家在比赛开始前 25 分钟进场。使用船只为 X 级战舰，8 VS 8 每方 1CV、3BB、3CA/CL、2DD。"
 keywords: "战舰世界"
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

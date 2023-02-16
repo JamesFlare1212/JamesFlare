@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "使用 Excel 绘制满足 IB Physic IA 的数据图表。在写 Physic IA（Internal Assessment）的时候，大家可能发现数据图表的评分挺复杂，你需要不少的内容才能获得满分数据图表。"
 keywords: ["Excel","Physic IA","Internal Assessment"]
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

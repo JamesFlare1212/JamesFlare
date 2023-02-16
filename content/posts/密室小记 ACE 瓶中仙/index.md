@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "和同学一起玩了 ACE 密室的 瓶中仙，这得吐槽吐槽，随便做点小小的测评总结"
 keywords: ["ACE","瓶中仙","密室"]
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

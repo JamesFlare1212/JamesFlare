@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "这可能是中文互联网上唯一一篇讲如何全栈部署 Excalidraw 的，绝大多数只是部署了一个残血的前端。但是有没有发现，分享链接和在线协作有问题，用不了？甚至 Libraries 还有点问题？本人试图在本地私有化部署 Excalidraw，操作是很简单。"
 keywords: ["Docker","Excalidraw"]
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:

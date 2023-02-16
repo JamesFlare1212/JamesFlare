@@ -10,7 +10,7 @@ authorEmail: "jamesflare1212@gmail.com"
 description: "一些交通常见违法行为的罚款，扣分和其违法代码收集。高速逆行，其他道路逆行，高速应急车道，不按导向车道，闯红灯，乱掉头，违规变道，不打转向灯，打电话，妨碍驾驶，不系安全带，不按规定使用灯光等。"
 keywords: ["违法代码","交通违法","罚款"]
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:
