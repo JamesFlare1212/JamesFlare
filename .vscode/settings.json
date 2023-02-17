@@ -1,0 +1,7 @@
+{
+    "[markdown]": {
+    },
+    "frontMatter.preview.host": "http://localhost:1313",
+    "frontMatter.dashboard.openOnStart": false,
+    "frontMatter.framework.startCommand": "hugo server -D -e production --disableFastRender"
+}
