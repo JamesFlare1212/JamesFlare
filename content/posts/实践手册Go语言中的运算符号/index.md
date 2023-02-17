@@ -2,11 +2,11 @@
 slug: "go-arithmetic-notation"
 title: "实践手册：Go 语言中的运算符号"
 date: 2023-02-17T00:20:39+08:00
-draft: true
+draft: false
 author: "James"
 authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: ""
+description: "操作符是编程语言的基本构件，Go也不例外。我将探讨 Go 中不同类型的运算符，以及如何使用它们来操作和比较数值。从基本的算术运算符到更高级的位运算符和逻辑运算符，我们将涵盖您在Go中开始使用运算符所需要知道的一切。"
 keywords: ""
 license: ""
 comment: true
@@ -20,7 +20,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: ""
+summary: "操作符是编程语言的基本构件，Go也不例外。我将探讨 Go 中不同类型的运算符，以及如何使用它们来操作和比较数值。从基本的算术运算符到更高级的位运算符和逻辑运算符，我们将涵盖您在Go中开始使用运算符所需要知道的一切。"
 resources:
 - name: featured-image
   src: featured-image.jpg
@@ -46,117 +46,89 @@ repost:
 
 ## 前言
 
-Go 语言中的运算符有许多种。
+Go 语言中的运算符有许多种，
 
-| 运算符 | 描述 |
+- 算术运算符：加法 `+`、减法 `-`、乘法 `*`、除法 `/`、取模 `%`
+- 自增/自减运算符：自增 `++`、自减 `--`
+- 赋值运算符：赋值 `=`、加法赋值 `+=`、减法赋值 `-=`、乘法赋值 `*=`、除法赋值 `/=`、取模赋值 `%=`、左移赋值 `<<=`、右移赋值 `>>=`、按位与赋值 `&=`、按位异或赋值 `^=`、按位或赋值 `|=`、按位清零赋值 `&^=`
+- 比较运算符：相等 `==`、不相等 `!=`、大于 `>`、小于 `<`、大于等于 `>=`、小于等于 `<=`
+- 逻辑运算符：逻辑非 `!`、逻辑与 `&&`、逻辑或 `||`
+- 位运算符：按位非 `~`、按位与 `&`、按位或 `|`、按位异或 `^`、左移 `<<`、右移 `>>`、按位清零 `&^`
+- 其他运算符：条件运算符 `?:`、逗号运算符 `,`
+
+做个表格归纳一下。
+
+### Arithmetic Operators
+
+| Operator | Description |
 | --- | --- |
-| + | 加法 |
-| - | 减法 |
-| * | 乘法 |
-| / | 除法 |
-| % | 取模 |
-| & | 按位与 |
-| \| | 按位或 |
-| ^ | 按位异或 |
-| << | 左移 |
-| >> | 右移 |
-| &^ | 按位清除 |
+| + | Addition |
+| - | Subtraction |
+| * | Multiplication |
+| / | Division |
+| % | Remainder |
 
-## 例子
+### Bitwise Operators
 
-1. `+`：加法运算符。用于将两个数相加，或者将字符串连接起来。
+| Operator | Description |
+| --- | --- |
+| & | Bitwise AND |
+| \| | Bitwise OR |
+| ^ | Bitwise XOR |
+| << | Left shift |
+| >> | Right shift |
+| &^ | Bit clear |
 
-    ```go
-    a := 2
-    b := 3
-    c := a + b // c = 5
+### Comparison Operators
 
-    s1 := "hello"
-    s2 := "world"
-    s3 := s1 + s2 // s3 = "helloworld"
-    ```
+| Operator | Description |
+| --- | --- |
+| == | Equal to |
+| != | Not equal to |
+| < | Less than |
+| > | Greater than |
+| <= | Less than or equal to |
+| >= | Greater than or equal to |
 
-1. `-`：减法运算符。用于将一个数减去另一个数。
+### Logical Operators
 
-    ```go
-    a := 5
-    b := 3
-    c := a - b // c = 2
-    ```
+| Operator | Description |
+| --- | --- |
+| && | Logical AND |
+| \| | Logical OR |
+| ! | Logical NOT |
 
-1. `*`：乘法运算符。用于将两个数相乘。
+### Assignment Operators
 
-    ```go
-    a := 2
-    b := 3
-    c := a * b // c = 6
-    ```
+| Operator | Description |
+| --- | --- |
+| = | Simple assignment |
+| += | Addition assignment |
+| -= | Subtraction assignment |
+| *= | Multiplication assignment |
+| /= | Division assignment |
+| %= | Remainder assignment |
+| <<= | Left shift assignment |
+| >>= | Right shift assignment |
+| &= | Bitwise AND assignment |
+| ^= | Bitwise XOR assignment |
+| \|= | Bitwise OR assignment |
+| &^= | Bit clear assignment |
 
-1. `/`：除法运算符。用于将一个数除以另一个数。
+### Miscellaneous Operators
 
-    ```go
-    a := 6
-    b := 3
-    c := a / b // c = 2
-    ```
+| Operator | Description |
+| --- | --- |
+| ++ | Increment |
+| -- | Decrement |
+| * | Pointer to |
+| & | Address of |
+| <- | Channel send/receive |
+| == nil | Nil check |
 
-1. `%`：取模运算符。用于求一个数除以另一个数的余数。
+## Example
 
-    ```go
-    a := 7
-    b := 3
-    c := a % b // c = 1
-    ```
-
-1. `&`：按位与运算符。用于将两个数按位与操作。
-
-    ```go
-    a := 0b1010 // 十进制为10
-    b := 0b1100 // 十进制为12
-    c := a & b  // c = 0b1000，即十进制为8
-    ```
-
-1. `|`：按位或运算符。用于将两个数按位或操作。
-
-    ```go
-    a := 0b1010 // 十进制为10
-    b := 0b1100 // 十进制为12
-    c := a | b  // c = 0b1110，即十进制为14
-    ```
-
-1. `^`：按位异或运算符。用于将两个数按位异或操作。
-
-    ```go
-    a := 0b1010 // 十进制为10
-    b := 0b1100 // 十进制为12
-    c := a ^ b  // c = 0b0110，即十进制为6
-    ```
-
-1. `<<`：左移运算符。用于将一个数的二进制表示向左移动指定的位数。
-
-    ```go
-    a := 0b1010 // 十进制为10
-    b := 2
-    c := a << b // c = 0b101000，即十进制为40
-    ```
-
-1. `>>`：右移运算符。用于将一个数的二进制表示向右移动指定的位数。
-
-    ```go
-    a := 0b1010 // 十进制为10
-    b := 2
-    c := a >> b // c = 0b10，即十进制为2
-    ```
-
-1. `&^`：按位清除运算符。用于将一个数的二进制表示中指定位置清零。
-
-    ```go
-    a := 0b1010 // 十进制为10
-    b := 0b1100 // 十进制为12
-    c := a &^ b // c = 0b0010，即十
-    ```
-
-以下是完整的例子
+### Arithmetic Operators
 
 ```go
 package main
@@ -164,147 +136,309 @@ package main
 import "fmt"
 
 func main() {
-	// 加法运算符
-	a := 2
-	b := 3
-	c := a + b
-	fmt.Println(c) // 输出 5
+    a := 10
+    b := 3
 
-	// 减法运算符
-	d := 5
-	e := 3
-	f := d - e
-	fmt.Println(f) // 输出 2
+    // Addition
+    c := a + b
+    fmt.Printf("%d + %d = %d\n", a, b, c)
 
-	// 乘法运算符
-	g := 2
-	h := 3
-	i := g * h
-	fmt.Println(i) // 输出 6
+    // Subtraction
+    c = a - b
+    fmt.Printf("%d - %d = %d\n", a, b, c)
 
-	// 除法运算符
-	j := 6
-	k := 3
-	l := j / k
-	fmt.Println(l) // 输出 2
+    // Multiplication
+    c = a * b
+    fmt.Printf("%d * %d = %d\n", a, b, c)
 
-	// 取模运算符
-	m := 7
-	n := 3
-	o := m % n
-	fmt.Println(o) // 输出 1
+    // Division
+    c = a / b
+    fmt.Printf("%d / %d = %d\n", a, b, c)
 
-	// 按位与运算符
-	p := 0b1010    // 十进制为 10
-	q := 0b1100    // 十进制为 12
-	r := p & q     // 十进制为 8
-	fmt.Println(r) // 输出 8
-
-	// 按位或运算符
-	s := 0b1010    // 十进制为 10
-	t := 0b1100    // 十进制为 12
-	u := s | t     // 十进制为 14
-	fmt.Println(u) // 输出 14
-
-	// 按位异或运算符
-	v := 0b1010    // 十进制为 10
-	w := 0b1100    // 十进制为 12
-	x := v ^ w     // 十进制为 6
-	fmt.Println(x) // 输出 6
-
-	// 左移运算符
-	y := 0b1010    // 十进制为 10
-	z := y << 2    // 左移 2 位，十进制为 40
-	fmt.Println(z) // 输出 40
-
-	// 右移运算符
-	a1 := 0b1010    // 十进制为 10
-	b1 := a1 >> 2   // 右移 2 位，十进制为 2
-	fmt.Println(b1) // 输出 2
-
-	// 按位清除运算符
-	c1 := 0b1010    // 十进制为 10
-	d1 := 0b1100    // 十进制为 12
-	e1 := c1 &^ d1  // 按位清除，十进制为 2
-	fmt.Println(e1) // 输出 2
-
-	// 自增和自减运算符
-	f1 := 5
-	f1++            // 自增
-	fmt.Println(f1) // 输出 6
-
-	g1 := 5
-	g1--            // 自减
-	fmt.Println(g1) // 输出 4
-
-	// 关系运算符
-	h1 := 2
-	i1 := 3
-	fmt.Println(h1 > i1)  // 输出 false
-	fmt.Println(h1 < i1)  // 输出 true
-	fmt.Println(h1 == i1) // 输出 false
-	fmt.Println(h1 != i1) // 输出 true
-
-	// 逻辑运算符
-	j1 := true
-	k1 := false
-	fmt.Println(j1 && k1) // 输出 false
-	fmt.Println(j1 || k1) // 输出 true
-	fmt.Println(!j1)      // 输出 false
-
-	// 位运算符
-	l1 := 0b1010              // 十进制为 10
-	m1 := 0b1100              // 十进制为 12
-	fmt.Printf("%b\n", ^l1)   // 输出二进制的按位取反，即 0b11111111111111111111111111110101
-	fmt.Printf("%b\n", l1&m1) // 输出二进制的按位与，即 0b1000
-	fmt.Printf("%b\n", l1|m1) // 输出二进制的按位或，即 0b1110
-	fmt.Printf("%b\n", l1^m1) // 输出二进制的按位异或，即 0b0110
-
-	// 赋值运算符
-	n1 := 2
-	n1 += 3         // 等价于 n1 = n1 + 3
-	fmt.Println(n1) // 输出 5
-
-	o1 := 5
-	o1 -= 3         // 等价于 o1 = o1 - 3
-	fmt.Println(o1) // 输出 2
-
-	p1 := 2
-	p1 *= 3         // 等价于 p1 = p1 * 3
-	fmt.Println(p1) // 输出 6
-
-	q1 := 6
-	q1 /= 3         // 等价于 q1 = q1 / 3
-	fmt.Println(q1) // 输出 2
-
-	r1 := 7
-	r1 %= 3         // 等价于 r1 = r1 % 3
-	fmt.Println(r1) // 输出 1
-
-	s1 := 0b1010    // 十进制为 10
-	s1 &= 0b1100    // 等价于 s1 = s1 & 0b1100，十进制为 8
-	fmt.Println(s1) // 输出 8
-
-	t1 := 0b1010    // 十进制为 10
-	t1 |= 0b1100    // 等价于 t1 = t1 | 0b1100，十进制为 14
-	fmt.Println(t1) // 输出 14
-
-	u1 := 0b1010    // 十进制为 10
-	u1 ^= 0b1100    // 等价于 u1 = u1 ^ 0b1100，十进制为 6
-	fmt.Println(u1) // 输出 6
-
-	v1 := 0b1010    // 十进制为 10
-	v1 <<= 2        // 等价于 v1 = v1 << 2，十进制为 40
-	fmt.Println(v1) // 输出 40
-
-	w1 := 0b1010    // 十进制为 10
-	w1 >>= 2        // 等价于 w1 = w1 >> 2，十进制为 2
-	fmt.Println(w1) // 输出 2
-
-	// 其他运算符
-	x1 := "hello"
-	y1 := "world"
-	z1 := x1 + y1   // 字符串拼接
-	fmt.Println(z1) // 输出 "helloworld"
+    // Remainder
+    c = a % b
+    fmt.Printf("%d %% %d = %d\n", a, b, c)
 }
 ```
+
+Outputs:
+
+```txt
+10 + 3 = 13
+10 - 3 = 7
+10 * 3 = 30
+10 / 3 = 3
+10 % 3 = 1
+```
+
+In this example, we declare two variables `a` and `b` with the values 10 and 3, respectively. We then perform arithmetic operations on these variables using the `+`, `-`, `*`, `/`, and `%` operators, storing the results in the variable `c` and printing them to the console with `fmt.Printf()`. We also include comments explaining each operation.
+
+### Bitwise Operators
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    a := 0b1010
+    b := 0b1100
+
+    // Bitwise AND
+    c := a & b
+    fmt.Printf("%b & %b = %b\n", a, b, c)
+
+    // Bitwise OR
+    c = a | b
+    fmt.Printf("%b | %b = %b\n", a, b, c)
+
+    // Bitwise XOR
+    c = a ^ b
+    fmt.Printf("%b ^ %b = %b\n", a, b, c)
+
+    // Left shift
+    c = a << 1
+    fmt.Printf("%b << 1 = %b\n", a, c)
+
+    // Right shift
+    c = a >> 1
+    fmt.Printf("%b >> 1 = %b\n", a, c)
+
+    // Bit clear
+    c = a &^ b
+    fmt.Printf("%b &^ %b = %b\n", a, b, c)
+}
+```
+
+Output:
+
+```txt
+1010 & 1100 = 1000
+1010 | 1100 = 1110
+1010 ^ 1100 = 110
+1010 << 1 = 10100
+1010 >> 1 = 101
+1010 &^ 1100 = 10
+```
+
+In this example, we declare two variables `a` and `b` with the values `0b1010` and `0b1100`, respectively, which are binary literals that represent the numbers 10 and 12 in base 10. We then perform bitwise operations on these variables using the `&`, `|`, `^`, `<<`, `>>`, and `&^` operators, storing the results in the variable `c` and printing them to the console with `fmt.Printf()`. We also include comments explaining each operation.
+
+### Comparison Operators
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    a := 10
+    b := 3
+
+    // Equal to
+    c := a == b
+    fmt.Printf("%d == %d = %t\n", a, b, c)
+
+    // Not equal to
+    c = a != b
+    fmt.Printf("%d != %d = %t\n", a, b, c)
+
+    // Less than
+    c = a < b
+    fmt.Printf("%d < %d = %t\n", a, b, c)
+
+    // Greater than
+    c = a > b
+    fmt.Printf("%d > %d = %t\n", a, b, c)
+
+    // Less than or equal to
+    c = a <= b
+    fmt.Printf("%d <= %d = %t\n", a, b, c)
+
+    // Greater than or equal to
+    c = a >= b
+    fmt.Printf("%d >= %d = %t\n", a, b, c)
+}
+```
+
+Output:
+
+```txt
+10 == 3 = false
+10 != 3 = true
+10 < 3 = false
+10 > 3 = true
+10 <= 3 = false
+10 >= 3 = true
+```
+
+In this example, we declare two variables `a` and `b` with the values 10 and 3, respectively. We then perform comparison operations on these variables using the `==`, `!=`, `<`, `>`, `<=`, and `>=` operators, storing the results in the variable `c` and printing them to the console with `fmt.Printf()`. We also include comments explaining each operation.
+
+
+### Logical Operators
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    a := true
+    b := false
+
+    // Logical AND
+    c := a && b
+    fmt.Printf("%t && %t = %t\n", a, b, c)
+
+    // Logical OR
+    c = a || b
+    fmt.Printf("%t || %t = %t\n", a, b, c)
+
+    // Logical NOT
+    c = !a
+    fmt.Printf("!%t = %t\n", a, c)
+}
+```
+
+Output:
+
+```txt
+true && false = false
+true || false = true
+!true = false
+```
+
+In this example, we declare two boolean variables `a` and `b` with the values `true` and `false`, respectively. We then perform logical operations on these variables using the `&&`, `||`, and `!` operators, storing the results in the variable `c` and printing them to the console with `fmt.Printf()`. We also include comments explaining each operation.
+
+### Assignment Operators
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    a := 10
+
+    // Simple assignment
+    b := a
+    fmt.Printf("b = %d\n", b)
+
+    // Addition assignment
+    a += 5
+    fmt.Printf("a += 5 -> a = %d\n", a)
+
+    // Subtraction assignment
+    a -= 2
+    fmt.Printf("a -= 2 -> a = %d\n", a)
+
+    // Multiplication assignment
+    a *= 3
+    fmt.Printf("a *= 3 -> a = %d\n", a)
+
+    // Division assignment
+    a /= 2
+    fmt.Printf("a /= 2 -> a = %d\n", a)
+
+    // Remainder assignment
+    a %= 3
+    fmt.Printf("a %%= 3 -> a = %d\n", a)
+
+    // Left shift assignment
+    a <<= 2
+    fmt.Printf("a <<= 2 -> a = %d\n", a)
+
+    // Right shift assignment
+    a >>= 1
+    fmt.Printf("a >>= 1 -> a = %d\n", a)
+
+    // Bitwise AND assignment
+    a &= 5
+    fmt.Printf("a &= 5 -> a = %d\n", a)
+
+    // Bitwise XOR assignment
+    a ^= 10
+    fmt.Printf("a ^= 10 -> a = %d\n", a)
+
+    // Bitwise OR assignment
+    a |= 15
+    fmt.Printf("a |= 15 -> a = %d\n", a)
+
+    // Bit clear assignment
+    a &^= 12
+    fmt.Printf("a &^= 12 -> a = %d\n", a)
+}
+```
+
+Output:
+
+```txt
+b = 10
+a += 5 -> a = 15
+a -= 2 -> a = 13
+a *= 3 -> a = 39
+a /= 2 -> a = 19
+a %= 3 -> a = 1
+a <<= 2 -> a = 4
+a >>= 1 -> a = 2
+a &= 5 -> a = 0
+a ^= 10 -> a = 10
+a |= 15 -> a = 15
+a &^= 12 -> a = 3
+```
+
+In this example, we declare a variable `a` with the value `10`. We then perform various assignment operations on `a` using the `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `&=`, `^=`, `|=`, and `&^=` operators, storing the results in the variable `a` and printing them to the console with `fmt.Printf()`. We also include comments explaining each operation.
+
+### Miscellaneous Operators
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    // Increment
+    a := 5
+    a++
+    fmt.Printf("a++ -> a = %d\n", a)
+
+    // Decrement
+    a--
+    fmt.Printf("a-- -> a = %d\n", a)
+
+    // Pointer to
+    b := &a
+    fmt.Printf("&a -> b = %p\n", b)
+
+    // Address of
+    c := *b
+    fmt.Printf("*b -> c = %d\n", c)
+
+    // Channel send/receive
+    ch := make(chan int)
+    go func() {
+        ch <- 5
+    }()
+    fmt.Printf("<-ch -> %d\n", <-ch)
+
+    // Nil check
+    var d *int
+    if d == nil {
+        fmt.Println("d is nil")
+    } else {
+        fmt.Println("d is not nil")
+    }
+}
+```
+
+Output:
+
+```txt
+a++ -> a = 6
+a-- -> a = 5
+&a -> b = 0xc000012098
+*b -> c = 5
+<-ch -> 5
+d is nil
+```
+
+In this example, we demonstrate various operators in Go with comments in English. We declare variables and channels as necessary, and perform operations using the `++`, `--`, `*`, and `&` operators. We also include a nil check for the `*int` pointer type, using the `==` operator to compare to `nil`. Finally, we include a channel send/receive example using the `<-` operator.
