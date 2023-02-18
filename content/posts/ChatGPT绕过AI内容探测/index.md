@@ -111,6 +111,32 @@ repost:
 
 写完可以使用开头的工具验证一下。
 
+### Orignal Text
+
+```txt
+As a large language model trained by OpenAI, ChatGPT has the potential to revolutionize the real estate industry by providing instant and accurate information to homebuyers and sellers, agents, and brokers. With its vast knowledge base, natural language processing capabilities, and ability to learn and adapt to new data, ChatGPT can provide an unprecedented level of support and insight to all parties involved in real estate transactions.
+
+One of the key ways ChatGPT can help revolutionize the real estate industry is by providing instant information to homebuyers and sellers. With its ability to understand and interpret natural language, ChatGPT can answer questions and provide relevant information about properties, neighborhoods, and the buying and selling process itself. This can save time and effort for both buyers and sellers, who can quickly get the information they need without having to spend hours researching or contacting real estate agents.
+
+In addition to providing information to buyers and sellers, ChatGPT can also assist real estate agents and brokers in a number of ways. For example, it can help agents quickly analyze market trends and provide insights into which properties are likely to sell quickly or for the best price. It can also help agents manage their schedules and communications with clients, allowing them to focus on building relationships and closing deals.
+
+Overall, ChatGPT has the potential to revolutionize the real estate industry by providing faster, more accurate, and more personalized support to all parties involved in buying and selling homes. Whether you’re a homebuyer or seller, agent or broker, ChatGPT can help you navigate the complex world of real estate with greater ease and confidence than ever before.
+```
+
+### Rewrited Text
+
+```txt
+As an AI-powered system, ChatGPT holds immense potential to instigate a revolution in the real estate industry by offering instantaneous and accurate information to homebuyers, sellers, agents, and brokers. Equipped with a massive knowledge base, natural language processing capabilities, and an innate capacity to learn and adapt to new data, ChatGPT presents an unparalleled level of support and insight to all parties involved in real estate transactions.
+
+The provision of instant information is a prime means by which ChatGPT can aid in revolutionizing the real estate industry. Through its prowess in comprehending and interpreting natural language, ChatGPT can answer questions and provide pertinent information about properties, neighborhoods, and the buying and selling process, thereby obviating the need for protracted research or communication with real estate agents. This capability can save buyers and sellers significant time and effort while also allowing them to receive the necessary information with ease and immediacy.
+
+Apart from supporting buyers and sellers, ChatGPT can also lend a hand to real estate agents and brokers in various ways. For instance, it can help agents expeditiously analyze market trends and deliver insights into which properties are likely to sell quickly or for the best price. Additionally, ChatGPT can aid agents in managing their schedules and interactions with clients, empowering them to concentrate on building relationships and securing deals.
+
+All in all, ChatGPT’s exceptional qualities equip it to spearhead a transformation in the real estate industry, endowing it with the capacity to provide faster, more accurate, and personalized support to all parties involved in buying and selling homes. Whether one is a homebuyer or seller, agent or broker, ChatGPT can assist in navigating the labyrinthine world of real estate with unprecedented ease and confidence, ushering in a new era of innovation and efficiency in the industry.
+```
+
+完整对话示例见文尾。
+
 ## End
 
 我认为，对于任何重要的写作，比如正儿八经的科研，法律文书等等。使用 AI 随手生成一堆内容然后发布是非常不负责的行为。
