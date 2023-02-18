@@ -3,7 +3,7 @@ slug: "igcse-circult"
 title: "IGCSE：Circult 快速复习"
 subtitle: ""
 date: 2023-02-18T20:20:02+08:00
-draft: true
+draft: false
 author: "James"
 authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
