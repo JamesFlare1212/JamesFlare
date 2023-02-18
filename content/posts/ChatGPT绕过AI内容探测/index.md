@@ -15,6 +15,7 @@ weight: 0
 
 tags:
 - AI
+- ChatGPT
 categories:
 - Tutorials
 
@@ -47,7 +48,7 @@ repost:
 
 ## Introduction
 
-现在或许有不少号称可以探测AI生成内容的工具或者服务，比如
+现在或许有不少号称可以探测 AI 生成内容的工具或者服务，比如
 
 - [Content at Scale](https://contentatscale.ai/ai-content-detector/)
 - [Writer.com](https://writer.com/ai-content-detector/)
@@ -66,7 +67,7 @@ repost:
 
 **Q：如果被探测出AI内容会怎么样？**
 
-个人认为，这不是一个太大的问题。内容探测告诉你的是此内容是 AI **生成**的概率，先不谈工具本身是否准确，次要的是，如果你使用 AI 从 0 到 1 完全生成一篇论文，本身说明你不想得一个高分。现阶段 AI 生成的论文只能说能看，但是没有什么意义，而且在小众领域搞不好一本正经的胡说八道。
+个人认为，这不是一个太大的问题。内容探测告诉你的是此内容是 AI 生成的概率，先不谈工具本身是否准确，次要的是，如果你使用 AI 从 0 到 1 完全生成一篇论文，本身说明你不想得一个高分。现阶段 AI 生成的论文只能说能看，但是没有什么意义，而且在小众领域搞不好一本正经的胡说八道。
 
 除非你的评分标准里，有说，高于多少 AI 生成概率作业就判 0 分，或者超过多少概率扣分，否则我认为没有什么好藏着的。你写的内容好，用它来润色润色又如何（其实这种情况你大概率不用管这个问题，探测分数不会高的）。总不能我这个高级研究内容用了 AI 帮助我增强表达，修正语法后就变得一文不值了吧。
 
@@ -86,10 +87,10 @@ repost:
 
 > 我们的分类器有一些重要的局限性。它不应作为主要的决策工具，而应作为确定一段文本来源的其他方法的补充。
 > 
-> - 在短文本（1,000个字符以下）上，分类器非常不可靠。甚至在较长的文本上，分类器有时也会错误地标记。
-> - 有时，人工编写的文本会被我们的分类器错误地但自信地标记为AI编写的文本。
+> - 在短文本（1,000 个字符以下）上，分类器非常不可靠。甚至在较长的文本上，分类器有时也会错误地标记。
+> - 有时，人工编写的文本会被我们的分类器错误地但自信地标记为 AI 编写的文本。
 > - 我们建议仅将分类器用于英文文本。它在其他语言上的表现要差得多，并且在代码上不可靠。
-> - 非常可预测的文本无法可靠地识别。例如，无法预测前1,000个质数的列表是由人工编写还是AI编写，因为正确答案总是相同的。
+> - 非常可预测的文本无法可靠地识别。例如，无法预测前 1,000 个质数的列表是由人工编写还是AI编写，因为正确答案总是相同的。
 > - AI编写的文本可以进行编辑以逃避分类器。像我们这样的分类器可以根据成功的攻击进行更新和重新训练，但未来是否有检测优势尚不清楚。
 > - 基于神经网络的分类器在其训练数据之外的数据上往往校准不良。对于与我们训练集中的文本非常不同的输入，分类器有时会非常自信地做出错误的预测。
 
@@ -135,7 +136,7 @@ Apart from supporting buyers and sellers, ChatGPT can also lend a hand to real e
 All in all, ChatGPT’s exceptional qualities equip it to spearhead a transformation in the real estate industry, endowing it with the capacity to provide faster, more accurate, and personalized support to all parties involved in buying and selling homes. Whether one is a homebuyer or seller, agent or broker, ChatGPT can assist in navigating the labyrinthine world of real estate with unprecedented ease and confidence, ushering in a new era of innovation and efficiency in the industry.
 ```
 
-完整对话示例见文尾。
+秒了，有什么好说的，完整对话示例见文尾。
 
 ## End
 
