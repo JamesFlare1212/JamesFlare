@@ -3,7 +3,7 @@ slug: "chatgpt-guide"
 title: "使用 ChatGPT 提速日常工作以及示例"
 subtitle: ""
 date: 2023-02-18T00:34:20+08:00
-draft: true
+draft: false
 author: "James"
 authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
