@@ -1,6 +1,6 @@
 ---
-slug: "go-sine-displayer"
-title: "实践手册：使用 Go 语言显示 Sin 图像"
+slug: "go-sine-generator"
+title: "实践手册：使用 Go 语言绘制 Sin 图像"
 subtitle: ""
 date: 2023-02-17T23:44:14+08:00
 draft: true
@@ -31,7 +31,7 @@ resources:
 toc:
   enable: true
 math:
-  enable: false
+  enable: true
 lightgallery: false
 seo:
   images: []
@@ -113,4 +113,4 @@ Next, it creates a new plotter for the sin function using a loop to calculate th
 
 Finally, it saves the plot to a PNG image file using the `p.Save()` function.
 
-The resulting PNG image file shows the sin graph, with the x-axis labeled "X" and the y-axis labeled "Y". The graph shows the sine function plotted against the angle in radians. The plot shows the sine wave oscillating between -1 and 1, with a period of 2π radians.
+The resulting PNG image file shows the sin graph, with the x-axis labeled $X$ and the y-axis labeled $Y$. The graph shows the sine function plotted against the angle in radians. The plot shows the sine wave oscillating between $-1$ and $1$, with a period of $2π$ radians.
