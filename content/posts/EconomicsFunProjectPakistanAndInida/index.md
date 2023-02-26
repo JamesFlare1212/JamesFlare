@@ -4,13 +4,14 @@ title: "Economics Indicators Between India and Pakistan"
 subtitle: ""
 date: 2023-02-27T01:31:09+08:00
 draft: true
-author: ""
-authorLink: ""
-authorEmail: ""
-description: ""
+draft: false
+author: "James"
+authorLink: "https://www.jamesflare.com"
+authorEmail: "jamesflare1212@gmail.com"
+description: "This is a Demonstration Only class work."
 keywords: ""
 license: ""
-comment: false
+comment: true
 weight: 0
 
 tags:
@@ -21,7 +22,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: ""
+summary: "This is a Demonstration Only class work."
 resources:
 - name: featured-image
   src: featured-image.jpg
