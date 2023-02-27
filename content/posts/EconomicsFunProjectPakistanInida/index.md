@@ -3,7 +3,6 @@ slug: "happness-inida-pakistan"
 title: "Economics Indicators Between India and Pakistan"
 subtitle: ""
 date: 2023-02-27T01:31:09+08:00
-draft: true
 draft: false
 author: "James"
 authorLink: "https://www.jamesflare.com"
