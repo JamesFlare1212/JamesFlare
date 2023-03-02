@@ -18,9 +18,26 @@ def replace_non_english_chars(prompt):
     prompt = prompt.replace("｝", "}")  # Chinese right brace
     return prompt
 
+def replace_bad_weights(prompt):
+    prompt = prompt.replace(" 1,", ":1.")
+    prompt = prompt.replace(" 0,", ":0.")
+    #prompt = prompt.replace("1,", ":1.")
+    prompt = prompt.replace("0,", ":0.")
+    prompt = prompt.replace("0,", ":0.")
+    prompt = prompt.replace(" :", ":")
+    prompt = prompt.replace(": ", ":")
+    prompt = prompt.replace(").", "),")
+    prompt = prompt.replace(".(", ",(")
+    prompt = prompt.replace(" )", ")")
+    prompt = prompt.replace(",)", "),")
+    prompt = prompt.replace(",,", ",")
+    return prompt
+
 def prompt_checker(prompt):
-    # Step 0: replace non-English commas and brackets with English equivalents
+    # Step -1: replace non-English commas and brackets with English equivalents
     prompt = replace_non_english_chars(prompt)
+    # Step 0: fix bad weights
+    prompt = replace_bad_weights(prompt)
 
     # Step 1: get prompt parts between english commas
     prompt_parts = re.findall("(?<=,)([^,]+)(?=,)", prompt)
