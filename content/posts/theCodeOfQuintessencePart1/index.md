@@ -7,7 +7,7 @@ draft: false
 author: "James"
 authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: "这是《元素法典》（第 壹 卷）的重写版本，主要是原版是一个在线文档，不够轻量和灵活。"
+description: "这是《元素法典》（第壹卷）的重写版本，主要是原版是一个在线文档，不够轻量和灵活。"
 keywords: ""
 license: ""
 comment: true
@@ -63,7 +63,7 @@ This Post is Rewrited from 《元素法典》.
 如果你在里面找到了非英文分隔号、像是错拼的单词、奇怪的回车甚至任何不像是科学能解释的东西——请不用担心，那都是咒语的一部分。
 
 如果你在寻找关于 Novel AI 的新手教程或 tag 解析，请左转：[元素同典 确实不完全科学的魔导书](https://docs.qq.com/doc/DWFdSTHJtQWRzYk9k)
-或前往贴吧官方QQ答疑群/技术交流群。
+或前往贴吧官方 QQ 答疑群/技术交流群。
 
 本文中所有资料均可被自由引用。
 

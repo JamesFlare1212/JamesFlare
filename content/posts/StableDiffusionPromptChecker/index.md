@@ -95,6 +95,14 @@ def replace_bad_weights(prompt):
     prompt = prompt.replace(".(", ",(")
     prompt = prompt.replace(" )", ")")
     prompt = prompt.replace(",)", "),")
+    prompt = prompt.replace("].", "],")
+    prompt = prompt.replace(".[", ",[")
+    prompt = prompt.replace(" ]", "]")
+    prompt = prompt.replace(",]", "],")
+    prompt = prompt.replace("}.", "},")
+    prompt = prompt.replace(".{", ",{")
+    prompt = prompt.replace(" }", "}")
+    prompt = prompt.replace(",}", "},")
     prompt = prompt.replace(",,", ",")
     return prompt
 
