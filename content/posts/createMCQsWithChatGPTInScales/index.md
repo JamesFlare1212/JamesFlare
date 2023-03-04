@@ -90,20 +90,33 @@ To make it easier to read, I made the Raw Mardown input into this Web Page.
 If you want check out the Raw input, check the end of this section. There is a dropdown box.
 {{< /admonition >}}
 
-> You are going to imagine 1000 MCQs about Astrophysics first, then randowmly give me 15 of them in this json form:
+> You are an AI-powered json file generater that never make mistakes, and you are going to imagine 1000 MCQs about Astrophysics first in mind, then randowmly give me 15 of them in this json form:
 > 
 > ```json
-> {
-> 	"order_numer": "[Order Number]",
-> 	"question": "[Question]",
-> 	"type": "mcq",
-> 	"option_a": "[Option A]",
-> 	"option_b": "[Option B]",
-> 	"option_c": "[Option C]",
-> 	"option_d": "[Option D]",
-> 	"answer": "[Right Option]",
-> 	"explanation": "[Explanation]"
-> },
+> [
+>   {
+>     "order_numer": "[Order Number]",
+>     "question": "[Question]",
+>     "type": "mcq",
+>     "option_a": "[Option A]",
+>     "option_b": "[Option B]",
+>     "option_c": "[Option C]",
+>     "option_d": "[Option D]",
+>     "answer": "[Right Option]",
+>     "explanation": "[Explanation]"
+>   },
+>   {
+>     "order_numer": "[Order Number]",
+>     "question": "[Question]",
+>     "type": "mcq",
+>     "option_a": "[Option A]",
+>     "option_b": "[Option B]",
+>     "option_c": "[Option C]",
+>     "option_d": "[Option D]",
+>     "answer": "[Right Option]",
+>     "explanation": "[Explanation]"
+>   }
+> ]
 > ```
 > 
 > Please check the understanding of these Learning objectives in your generated MCQs:
@@ -181,7 +194,7 @@ If you want check out the Raw input, check the end of this section. There is a d
 > 
 > 2. Be creative, change the perspective of your questions randomly, not necessarily from nouns to explanations, but from explanations to nouns, or ask questions based on the relationship between nouns, or ask questions in conjunction with examples; your goal is to help students fully understand the topic from all angles.
 >
-> 3. Do not make anything else than json type MCQs, including ordering numbers, lists, list number, explanations. Make your answer into a whole json style responed with right grammar.
+> 3. Only reply the MCQs and nothing else, do not write explanations. Make sure your answer has right json grammar.
 >
 > 4. Use english quotation marks or any other english punctuation only.
 
@@ -190,19 +203,32 @@ You can only input pure text into ChatGPT, but it can understand markdown coding
 If you have issue on creating markdown table, try out this [Table to Markdown](https://markdown-convert.com/en/tool/table).
 
 ```txt
-You are going to imagine 1000 MCQs about Astrophysics first, then randowmly give me 15 of them in this json form:
+You are an AI-powered json file generater that never make mistakes, and you are going to imagine 1000 MCQs about Astrophysics first in mind, then randowmly give me 15 of them in this json form:
 
-{
-	"order_numer": "[Order Number]",
-	"question": "[Question]",
-	"type": "mcq",
-	"option_a": "[Option A]",
-	"option_b": "[Option B]",
-	"option_c": "[Option C]",
-	"option_d": "[Option D]",
-	"answer": "[Right Option]",
-	"explanation": "[Explanation]"
-},
+[
+  {
+    "order_numer": "[Order Number]",
+    "question": "[Question]",
+    "type": "mcq",
+    "option_a": "[Option A]",
+    "option_b": "[Option B]",
+    "option_c": "[Option C]",
+    "option_d": "[Option D]",
+    "answer": "[Right Option]",
+    "explanation": "[Explanation]"
+  },
+  {
+    "order_numer": "[Order Number]",
+    "question": "[Question]",
+    "type": "mcq",
+    "option_a": "[Option A]",
+    "option_b": "[Option B]",
+    "option_c": "[Option C]",
+    "option_d": "[Option D]",
+    "answer": "[Right Option]",
+    "explanation": "[Explanation]"
+  }
+]
 
 Please check the understanding of Learning objectives in your generated MCQs:
 
@@ -279,7 +305,7 @@ Primary Order:
 
 2. Be creative, change the perspective of your questions randomly, not necessarily from nouns to explanations, but from explanations to nouns, or ask questions based on the relationship between nouns, or ask questions in conjunction with examples; your goal is to help students fully understand the topic from all angles.
 
-3. Do not make anything else than json type MCQs, including ordering numbers, lists, list number, explanations. Make your answer into a whole json style responed with right grammar.
+3. Only reply the MCQs and nothing else, do not write explanations. Make sure your answer has right json grammar.
 
 4. Use english quotation marks or any other english punctuation only.
 ```
