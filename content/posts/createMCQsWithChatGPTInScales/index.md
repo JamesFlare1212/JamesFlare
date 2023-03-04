@@ -1,4 +1,5 @@
 ---
+slug: "create-mcq-chatgpt-scales"
 title: "Create MCQs with ChatGPT in Scales"
 subtitle: ""
 date: 2023-03-04T16:45:19+08:00
