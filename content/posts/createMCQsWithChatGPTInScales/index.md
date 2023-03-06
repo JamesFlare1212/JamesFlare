@@ -7,7 +7,7 @@ draft: false
 author: "James"
 authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: "I am going to show you how to create MCQs in scales and randomly pick a selecten number of questions out, then make it into foramted editable Word documents."
+description: "I am going to show you how to create MCQs in scales and randomly pick a selected number of questions out, then make it into formatted editable Word documents."
 keywords: ""
 license: ""
 comment: true
@@ -21,7 +21,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: "I am going to show you how to create MCQs in scales and randomly pick a selecten number of questions out, then make it into foramted editable Word documents."
+summary: "I am going to show you how to create MCQs in scales and randomly pick a selected number of questions out, then make it into formatted editable Word documents."
 resources:
 - name: featured-image
   src: featured-image.jpg
@@ -51,7 +51,7 @@ Hi, dear teachers!
 
 Did you have difficulty on creating test paper for students?
 
-In this post, I am going to show you how to create MCQs in scales and randomly pick a selecten number of questions out, then make it into three foramted editable Word documents, includes test paper, answer sheet and marking scheme.
+In this post, I am going to show you how to create MCQs in scales and randomly pick a selected number of questions out, then make it into three formatted editable Word documents, includes test paper, answer sheet and marking scheme.
 
 ### Steps
 
@@ -73,29 +73,29 @@ You may do your prompt like this format
 > 
 > \[Topic Concepts\] + 
 > 
-> \[Addtional Points\] + 
+> \[Additional Points\] + 
 > 
 > \[MCQ Command Words\] + 
 > 
 > \[Rules for ChatGPT\]
 
-I made a non-perfect example on Astrophysics, which means not all objects were covered. So, the MCQs can be a bit boring under mass generation. But they will not repeat, at least in opions.
+I made a non-perfect example on Astrophysics, which means not all objects were covered. So, the MCQs can be a bit boring under mass generation. But they will not repeat, at least in options.
 
 Therefore, students who memorize options will be ended.
 
 ### Example
 
 {{< admonition type=warning title="This is not The Raw Input" open=true >}}
-To make it easier to read, I made the Raw Mardown input into this Web Page.  
+To make it easier to read, I made the Raw Markdown input into this Web Page.  
 If you want check out the Raw input, check the end of this section. There is a dropdown box.
 {{< /admonition >}}
 
-> You are an AI-powered json file generater that never make mistakes, and you are going to imagine 1000 MCQs about Astrophysics first in mind, then randowmly give me 15 of them in this json form:
+> You are an AI-powered json file generator that never make mistakes, and you are going to imagine 1000 MCQs about Astrophysics first in mind, then randomly give me 15 of them in this json form:
 > 
 > ```json
 > [
 >   {
->     "order_numer": "[Order Number]",
+>     "order_number": "[Order Number]",
 >     "question": "[Question]",
 >     "type": "mcq",
 >     "option_a": "[Option A]",
@@ -106,7 +106,7 @@ If you want check out the Raw input, check the end of this section. There is a d
 >     "explanation": "[Explanation]"
 >   },
 >   {
->     "order_numer": "[Order Number]",
+>     "order_number": "[Order Number]",
 >     "question": "[Question]",
 >     "type": "mcq",
 >     "option_a": "[Option A]",
@@ -129,10 +129,10 @@ If you want check out the Raw input, check the end of this section. There is a d
 > 
 > 4. Work with the method of parallax.
 > 
-> 5. Definene luminosity and apparent brightness and solve problems with these quantities and distance.
+> 5. Define luminosity and apparent brightness and solve problems with these quantities and distance.
 > 
 > And these key concepts as well:
-> |Term|Defination|
+> |Term|Definition|
 > |:----|:----|
 > |Binary star|Two stars orbiting a common centre|
 > |Black dwarf|The remnant of a white dwarf after it has cooled down. It has very low luminosity|
@@ -141,24 +141,24 @@ If you want check out the Raw input, check the end of this section. There is a d
 > |Cepheid variable|A star of variable luminosity. The luminosity increases sharply and falls off gently with a well-defined period. The period is related to the absolute luminosity of the star and so can be used to estimate the distance to the star|
 > |Cluster of galaxies|Galaxies close to one another and affecting one another gravitationally, behaving as one unit|
 > |Comet|A small body (mainly ice and dust) orbiting the Sun in an elliptical orbit|
-> |Constellation|A group of stars in a recognisable pattern that appear to be near each other in space|
+> |Constellation|A group of stars in a recognizable pattern that appear to be near each other in space|
 > |Dark matter|Generic name for matter in galaxies and clusters of galaxies that is too cold to radiate. Its existence is inferred from techniques other than direct visual observation|
 > |Galaxy|A collection of a very large number of stars mutually attracting one another through the gravitational force and staying together. The number of stars in a galaxy varies from a few million in dwarf galaxies to hundreds of billions in large galaxies. It is estimated that 100 billion galaxies exist in the observable universe|
-> |Interstellar medium|Gases (mainly hydrogen and helium) and dust grains (silicates, carbon and iron) filling the space between stars. The density of the interstellar medium is very low. There is about one atom of gas for every cubic centimetre of space. The density of dust is a trillion times smaller. The temperature of the gas is about 100 K|
+> |Interstellar medium|Gases (mainly hydrogen and helium) and dust grains (silicates, carbon and iron) filling the space between stars. The density of the interstellar medium is very low. There is about one atom of gas for every cubic centimeter of space. The density of dust is a trillion times smaller. The temperature of the gas is about 100 K|
 > |Main-sequence star|A normal star that is undergoing nuclear fusion of hydrogen into helium. Our Sun is a typical main-sequence star|
 > |Nebula|Clouds of 'dust', i.e. compounds of carbon, oxygen, silicon and metals, as well as molecular hydrogen, in the space in between stars|
-> |Neutron star|The end result of the explosion of a red supergiant; a very small star (a few tens of kilometres in diameter) and very dense. This is a star consisting almost entirely of neutrons. The neutrons form a superfluid around a core of immense pressure and density. A neutron star is an astonishing macroscopic example of microscopic quantum physics|
+> |Neutron star|The end result of the explosion of a red supergiant; a very small star (a few tens of kilometers in diameter) and very dense. This is a star consisting almost entirely of neutrons. The neutrons form a superfluid around a core of immense pressure and density. A neutron star is an astonishing macroscopic example of microscopic quantum physics|
 > |Planetary nebula|The ejected envelope of a red giant star|
-> |Red dwarf|A very small star with low temperature, reddish in colour|
+> |Red dwarf|A very small star with low temperature, reddish in color|
 > |Red giant|A main-sequence star evolves into a red giant - a very large, reddish star. There are nuclear reactions involving the fusion of helium into heavier elements|
 > |Stellar cluster|A group of stars that are physically near each other in space, created by the collapse of a single gas cloud|
 > |Supernova (Type la)|The explosion of a white dwarf that has accreted mass from a companion star exceeding its stability limit|
 > |Supernova (Type II)|The explosion of a red supergiant star: The amount of energy emitted in a supernova explosion can be staggering - comparable to the total energy radiated by our Sun in its entire lifetime!|
 > |White dwarf|The end result of the explosion of a red giant. A small, dense star (about the size of the Earth), in which no nuclear reactions take place. It is very hot but its small size gives it a very low luminosity.|
 >
-> in Addtional of:
+> in Additional of:
 >
-> 1. Nuclear fusion provides the energy that is needed to keep the star hot, so that the radiation pressure is high enough to oppose further ravitational contraction, and at the same time to provide the energy that the star is radiating into space.
+> 1. Nuclear fusion provides the energy that is needed to keep the star hot, so that the radiation pressure is high enough to oppose further gravitational contraction, and at the same time to provide the energy that the star is radiating into space.
 > 
 > 1. The power radiated by a star is known in astrophysics as the luminosity. It is measured in watts.
 > 
@@ -168,7 +168,7 @@ If you want check out the Raw input, check the end of this section. There is a d
 > 
 > 1. \[Background\] + what is ...
 > 
-> 2. What is ture about ...
+> 2. What is true about ...
 > 
 > 3. Which ... according  ...
 > 
@@ -184,13 +184,13 @@ If you want check out the Raw input, check the end of this section. There is a d
 > 
 > 9. Which statement justify ...
 > 
-> 10. Which is not coreect ...
+> 10. Which is not correct ...
 >
-> Do not repeat on one type of sentance.
+> Do not repeat on one type of sentence.
 > 
 > Primary Order:
 > 
-> 1. Make all MCQs base on above information and your knowledge if needed. When there are conflict between your knowledge and the above information. You should use your knowlege to add more detail and background to produce MCQs.
+> 1. Make all MCQs base on above information and your knowledge if needed. When there are conflict between your knowledge and the above information. You should use your knowledge to add more detail and background to produce MCQs.
 > 
 > 2. Be creative, change the perspective of your questions randomly, not necessarily from nouns to explanations, but from explanations to nouns, or ask questions based on the relationship between nouns, or ask questions in conjunction with examples; your goal is to help students fully understand the topic from all angles.
 >
@@ -203,11 +203,11 @@ You can only input pure text into ChatGPT, but it can understand markdown coding
 If you have issue on creating markdown table, try out this [Table to Markdown](https://markdown-convert.com/en/tool/table).
 
 ```txt
-You are an AI-powered json file generater that never make mistakes, and you are going to imagine 1000 MCQs about Astrophysics first in mind, then randowmly give me 15 of them in this json form:
+You are an AI-powered json file generator that never make mistakes, and you are going to imagine 1000 MCQs about Astrophysics first in mind, then randomly give me 15 of them in this json form:
 
 [
   {
-    "order_numer": "[Order Number]",
+    "order_number": "[Order Number]",
     "question": "[Question]",
     "type": "mcq",
     "option_a": "[Option A]",
@@ -218,7 +218,7 @@ You are an AI-powered json file generater that never make mistakes, and you are 
     "explanation": "[Explanation]"
   },
   {
-    "order_numer": "[Order Number]",
+    "order_number": "[Order Number]",
     "question": "[Question]",
     "type": "mcq",
     "option_a": "[Option A]",
@@ -240,7 +240,7 @@ Please check the understanding of Learning objectives in your generated MCQs:
 
 4. Work with the method of parallax.
 
-5. Definene luminosity and apparent brightness and solve problems with these quantities and distance.
+5. Define luminosity and apparent brightness and solve problems with these quantities and distance.
 
 And these key concepts as well:
 
@@ -252,24 +252,24 @@ And these key concepts as well:
 |Cepheid variable|A star of variable luminosity. The luminosity increases sharply and falls off gently with a well-defined period. The period is related to the absolute luminosity of the star and so can be used to estimate the distance to the star|
 |Cluster of galaxies|Galaxies close to one another and affecting one another gravitationally, behaving as one unit|
 |Comet|A small body (mainly ice and dust) orbiting the Sun in an elliptical orbit|
-|Constellation|A group of stars in a recognisable pattern that appear to be near each other in space|
+|Constellation|A group of stars in a recognizable pattern that appear to be near each other in space|
 |Dark matter|Generic name for matter in galaxies and clusters of galaxies that is too cold to radiate. Its existence is inferred from techniques other than direct visual observation|
 |Galaxy|A collection of a very large number of stars mutually attracting one another through the gravitational force and staying together. The number of stars in a galaxy varies from a few million in dwarf galaxies to hundreds of billions in large galaxies. It is estimated that 100 billion galaxies exist in the observable universe|
-|Interstellar medium|Gases (mainly hydrogen and helium) and dust grains (silicates, carbon and iron) filling the space between stars. The density of the interstellar medium is very low. There is about one atom of gas for every cubic centimetre of space. The density of dust is a trillion times smaller. The temperature of the gas is about 100 K|
+|Interstellar medium|Gases (mainly hydrogen and helium) and dust grains (silicates, carbon and iron) filling the space between stars. The density of the interstellar medium is very low. There is about one atom of gas for every cubic centimeter of space. The density of dust is a trillion times smaller. The temperature of the gas is about 100 K|
 |Main-sequence star|A normal star that is undergoing nuclear fusion of hydrogen into helium. Our Sun is a typical main-sequence star|
 |Nebula|Clouds of 'dust', i.e. compounds of carbon, oxygen, silicon and metals, as well as molecular hydrogen, in the space in between stars|
-|Neutron star|The end result of the explosion of a red supergiant; a very small star (a few tens of kilometres in diameter) and very dense. This is a star consisting almost entirely of neutrons. The neutrons form a superfluid around a core of immense pressure and density. A neutron star is an astonishing macroscopic example of microscopic quantum physics|
+|Neutron star|The end result of the explosion of a red supergiant; a very small star (a few tens of kilometers in diameter) and very dense. This is a star consisting almost entirely of neutrons. The neutrons form a superfluid around a core of immense pressure and density. A neutron star is an astonishing macroscopic example of microscopic quantum physics|
 |Planetary nebula|The ejected envelope of a red giant star|
-|Red dwarf|A very small star with low temperature, reddish in colour|
+|Red dwarf|A very small star with low temperature, reddish in color|
 |Red giant|A main-sequence star evolves into a red giant - a very large, reddish star. There are nuclear reactions involving the fusion of helium into heavier elements|
 |Stellar cluster|A group of stars that are physically near each other in space, created by the collapse of a single gas cloud|
 |Supernova (Type la)|The explosion of a white dwarf that has accreted mass from a companion star exceeding its stability limit|
 |Supernova (Type II)|The explosion of a red supergiant star: The amount of energy emitted in a supernova explosion can be staggering - comparable to the total energy radiated by our Sun in its entire lifetime!|
 |White dwarf|The end result of the explosion of a red giant. A small, dense star (about the size of the Earth), in which no nuclear reactions take place. It is very hot but its small size gives it a very low luminosity]|
 
-in Addtional of:
+in Additional of:
 
-1. Nuclear fusion provides the energy that is needed to keep the star hot, so that the radiation pressure is high enough to oppose further ravitational contraction, and at the same time to provide the energy that the star is radiating into space.
+1. Nuclear fusion provides the energy that is needed to keep the star hot, so that the radiation pressure is high enough to oppose further gravitational contraction, and at the same time to provide the energy that the star is radiating into space.
 
 2. The power radiated by a star is known in astrophysics as the luminosity. It is measured in watts.
 
@@ -279,7 +279,7 @@ You must use a variety of multiple-choice question types:
 
 1. [Background] + what is ...
 
-2. What is ture about ...
+2. What is true about ...
 
 3. Which ... according  ...
 
@@ -295,13 +295,13 @@ You must use a variety of multiple-choice question types:
 
 9. Which statement justify ...
 
-10. Which is not coreect ...
+10. Which is not correct ...
 
-Do not repeat on one type of sentance.
+Do not repeat on one type of sentence.
 
 Primary Order:
 
-1. Make all MCQs base on above information and your knowledge if needed. When there are conflict between your knowledge and the above information. You should use your knowlege to add more detail and background to produce MCQs.
+1. Make all MCQs base on above information and your knowledge if needed. When there are conflict between your knowledge and the above information. You should use your knowledge to add more detail and background to produce MCQs.
 
 2. Be creative, change the perspective of your questions randomly, not necessarily from nouns to explanations, but from explanations to nouns, or ask questions based on the relationship between nouns, or ask questions in conjunction with examples; your goal is to help students fully understand the topic from all angles.
 
@@ -312,7 +312,7 @@ Primary Order:
 
 ## Format Question Bank
 
-Before we start, we should know some base knowlege about .json format. In our case, we want our question bank be like:
+Before we start, we should know some base knowledge about .json format. In our case, we want our question bank be like:
 
 ```json
 [
@@ -341,7 +341,7 @@ Before we start, we should know some base knowlege about .json format. In our ca
 ]
 ```
 
-We use the square bracket to include all curly brackets. At the same time, the curly brackets need to be spearted by a comma.
+We use the square bracket to include all curly brackets. At the same time, the curly brackets need to be separated by a comma.
 
 ```json
 [
@@ -392,11 +392,11 @@ Three main issues
 
 The ident is missing, but it's not a issue. You may copy the text into [JSON Formatter](https://jsonformatter.curiousconcept.com/#) just get it looks better.
 
-To fix non-english quotation marks, just use a replacing function. Don't use Word or WPS for this job. I recommand a [Sublimetext 4](https://www.sublimetext.com/download) text editor for this job. Others, such as BBEdit is also fine.
+To fix non-english quotation marks, just use a replacing function. Don't use Word or WPS for this job. I recommend a [Sublimetext 4](https://www.sublimetext.com/download) text editor for this job. Others, such as BBEdit is also fine.
 
 After you copy answer parts from ChatGPT, you may find the `order_number` is mass.
 
-Don't worry, first, in the next step of creating MCQ papers, the order number in the paper is not fromthe `order_number` in .json file.
+Don't worry, first, in the next step of creating MCQ papers, the order number in the paper is not from the `order_number` in .json file.
 
 Second, Here is a Python program that can fix this issue. But, If you do not care about beauty, just make sure there are not grammar mistake for your json file. To do that, you may use [JSON Formatter](https://jsonformatter.curiousconcept.com/#).
 
@@ -460,7 +460,7 @@ python /path/to/the/qbReorder.py
 
 But in my `qbReorder.py`. I made the un-order .json file as `data.json`. After you run, you will get a `question_bank.json` on the running path. If you want another name, you may change the code.
 
-I highly recommand you create a folder for this job and put all files here.
+I highly recommend you create a folder for this job and put all files here.
 
 - qbReorder.py
 - data.json
@@ -601,7 +601,7 @@ If you don't have `pip`, here is the steps:
     python3 get-pip.py
     ```
 
-Addtional, if you have Homebrew, when you run `brew install python`, `pip` is included.
+Additional, if you have Homebrew, when you run `brew install python`, `pip` is included.
 
 Now, we can continue our work. Install `python-docx` package.
 
