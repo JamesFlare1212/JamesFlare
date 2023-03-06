@@ -45,6 +45,10 @@ repost:
 
 <!--more-->
 
+{{< admonition type=warning title="Class Work" open=true >}}
+For Demonstration Only
+{{< /admonition >}}
+
 ## HIPC and LDC Countries
 
 **HIPC** stands for "**H**eavily **I**ndebted **P**oor **C**ountries" and refers to 39 countries with high debt levels and low economic development, as determined by the World Bank and **I**nternational **M**onetary **F**und (**IMF**). These countries are eligible for debt relief and aid programs to help alleviate their debt burden and promote economic growth.
