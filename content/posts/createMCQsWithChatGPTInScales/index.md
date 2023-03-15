@@ -102,8 +102,8 @@ If you want check out the Raw input, check the end of this section. There is a d
 >     "option_b": "[Option B]",
 >     "option_c": "[Option C]",
 >     "option_d": "[Option D]",
->     "answer": "[Right Option]",
->     "explanation": "[Explanation]"
+>     "answer": "[Correct Option in ABCD]",
+>     "explanation": "[Explanation of Why This Answer]"
 >   },
 >   {
 >     "order_number": "[Order Number]",
@@ -113,8 +113,8 @@ If you want check out the Raw input, check the end of this section. There is a d
 >     "option_b": "[Option B]",
 >     "option_c": "[Option C]",
 >     "option_d": "[Option D]",
->     "answer": "[Right Option]",
->     "explanation": "[Explanation]"
+>     "answer": "[Correct Option in ABCD]",
+>     "explanation": "[Explanation of Why This Answer]"
 >   }
 > ]
 > ```
@@ -214,8 +214,8 @@ You are an AI-powered json file generator that never make mistakes, and you are 
     "option_b": "[Option B]",
     "option_c": "[Option C]",
     "option_d": "[Option D]",
-    "answer": "[Right Option]",
-    "explanation": "[Explanation]"
+    "answer": "[Correct Option in ABCD]",
+    "explanation": "[Explanation of Why This Answer]"
   },
   {
     "order_number": "[Order Number]",
@@ -225,8 +225,8 @@ You are an AI-powered json file generator that never make mistakes, and you are 
     "option_b": "[Option B]",
     "option_c": "[Option C]",
     "option_d": "[Option D]",
-    "answer": "[Right Option]",
-    "explanation": "[Explanation]"
+    "answer": "[Correct Option in ABCD]",
+    "explanation": "[Explanation of Why This Answer]"
   }
 ]
 
