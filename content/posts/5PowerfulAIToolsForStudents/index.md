@@ -33,7 +33,7 @@ toc:
   enable: true
 math:
   enable: false
-lightgallery: false
+lightgallery: true
 seo:
   images: []
 
@@ -62,4 +62,12 @@ So, we got the idea about what we need:
 
 ## Text Book Reading
 
-Before the lessons, we should read the textbook, this is called pre-view.
+Before the lessons, we should read the textbook, this is called pre-view. And there is a tool that blow my mind. It's called [**ChatPDF**](https://www.chatpdf.com/).
+
+{{< image src="chatPDFHomePage.webp" width="100%" caption="ChatPDF" >}}
+
+What you need to do is just the part of text book that you would like to read into it.
+
+## Note Making
+
+When we are watching videos on YouTube or bilibili, you may spent a lot of time on unrelated videos. Or may be you just need some notes from the videos. Then [**BibiGPT**](https://github.com/JimmyLv/BibiGPT) is designed for you. It's open sourced, which means you can even develop your own server.
