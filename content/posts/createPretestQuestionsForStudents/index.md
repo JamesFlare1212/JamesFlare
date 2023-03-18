@@ -449,3 +449,5 @@ Ranking of topics from good understanding to relatively low understanding:
 6. Evidence supporting the Big Bang Theory (Q7)
 7. Dark matter (Q8)
 ```
+
+Again, GPT-3.5 can not fully understand its job and just telling students did a good job which is not true. Use GPT-4 if you can.
