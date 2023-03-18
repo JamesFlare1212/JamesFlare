@@ -127,6 +127,10 @@ Then, we can show that to GPT-4/GPT-3.5 and get a feedback report.
 > 
 > Analyze their understanding. Include their "Good areas of understanding" and "Weak areas of understanding". Classify them base on the students' name. And do a summary at the end about general of the class. For example, what area should be more focused on, what can be cover quicker and why.
 
+{{< admonition type=warning title="GPT-4 is Highly Recommended" open=true >}}
+GPT-3.5 seems can not understand the students answered correctly or not. Just given something looks good. Use GPT-4 for this task please.
+{{< /admonition >}}
+
 If you are starting a new conversation you should include the **test** and the **system prompt** into it as:
 
 ```text
@@ -372,41 +376,78 @@ Then, you can put it into the [analyzer](#answer-analyzer) again.
 
 It's idea can be used into other subjects/topics, you get the idea, that is a homework. If someone have done that, welcome to comment here.
 
-Here is a sample report:
+Here is a sample report made by GPT-4:
 
 ```text
-Examiner Comments:
+Jhon Chen:
+Good areas of understanding:
 
-Student 1:
+- Types of galaxies (Q1)
+- Observable universe's ongoing expansion (Q4)
+- Essential elements for solar system formation (Q9)
 
-Good areas of understanding: Student 1 has a good understanding of the types of galaxies, the elements that make up most of the visible matter in the universe, celestial objects that are considered the remnants of massive stars after a supernova explosion, the ongoing expansion of the observable universe, and evidence supporting the Big Bang Theory.
-Weak areas of understanding: Student 1 appears to have some confusion about the phenomena produced by the interaction between a star and a nearby object with intense gravity, and the essential components for the formation of a solar system.
+Weak areas of understanding:
 
-Student 2:
+- Primary elements in the universe (Q2)
+- Remnants of massive stars (Q3)
+- Phenomena produced by intense gravity (Q5)
+- Theories of the universe's origin (Q6)
+- Evidence supporting the Big Bang Theory (Q7)
+- Dark matter (Q8)
+- Astrophysics-related documentaries (Q10)
 
-Good areas of understanding: Student 2 has a good understanding of the types of galaxies, celestial objects that are considered the remnants of massive stars after a supernova explosion, the ongoing expansion of the observable universe, evidence supporting the Big Bang Theory, and the essential components for the formation of a solar system.
-Weak areas of understanding: Student 2 appears to have some confusion about the primary elements that make up most of the visible matter in the universe and the evidence supporting the Big Bang Theory.
+James Flare:
+Good areas of understanding:
 
-Student 3:
+- Observable universe's ongoing expansion (Q4)
+- Essential elements for solar system formation (Q9)
 
-Good areas of understanding: Student 3 has a good understanding of the primary elements that make up most of the visible matter in the universe and the evidence supporting the Big Bang Theory.
-Weak areas of understanding: Student 3 appears to have some confusion about the types of galaxies, celestial objects that are considered the remnants of massive stars after a supernova explosion, and the essential components for the formation of a solar system. Also, the student provided an answer that did not relate to the question in the open-ended question.
+Weak areas of understanding:
 
-Ranking of students' understanding from good to relative low:
+- Types of galaxies (Q1)
+- Primary elements in the universe (Q2)
+- Remnants of massive stars (Q3)
+- Phenomena produced by intense gravity (Q5)
+- Theories of the universe's origin (Q6)
+- Evidence supporting the Big Bang Theory (Q7)
+- Dark matter (Q8)
+- Astrophysics-related documentaries (Q10)
 
-1. Student 1
-2. Student 2
-3. Student 3
+Peter Xu:
+Good areas of understanding:
 
-Ranking of topics that students have good understanding to relative low understanding:
+- Primary elements in the universe (Q2)
+- Observable universe's ongoing expansion (Q4)
+- Essential elements for solar system formation (Q9)
+- Astrophysics-related documentaries (Q10)
 
-1. Evidence supporting the Big Bang Theory
-2. Types of galaxies
-3. Celestial objects that are considered the remnants of massive stars after a supernova explosion
-4. Ongoing expansion of the observable universe
-5. Essential components for the formation of a solar system
-6. Primary elements that make up most of the visible matter in the universe
-7. Phenomena produced by the interaction between a star and a nearby object with intense gravity
+Weak areas of understanding:
 
-Summary: Overall, the students had a good understanding of the evidence supporting the Big Bang Theory, types of galaxies, and celestial objects that are considered the remnants of massive stars after a supernova explosion. However, they had some weaknesses in understanding the essential components for the formation of a solar system, the primary elements that make up most of the visible matter in the universe, and phenomena produced by the interaction between a star and a nearby object with intense gravity. It may be beneficial to focus more on these topics in the upcoming lessons. Additionally, the open-ended question revealed that not all students have seen or heard about documentaries, movies, or TV shows related to astrophysics. Therefore, incorporating such materials in class may increase students' interest and engagement in the subject.
+- Types of galaxies (Q1)
+- Remnants of massive stars (Q3)
+- Phenomena produced by intense gravity (Q5)
+- Theories of the universe's origin (Q6)
+- Evidence supporting the Big Bang Theory (Q7)
+- Dark matter (Q8)
+
+Summary:
+Overall, the class seems to have a better understanding of the observable universe's ongoing expansion and the essential elements for solar system formation. These topics could be covered relatively quickly. However, the class has shown weaker understanding in the areas of types of galaxies, remnants of massive stars, phenomena produced by intense gravity, theories of the universe's origin, evidence supporting the Big Bang Theory, and dark matter. These areas should be given more focus and attention during the lessons.
+
+Ranking of students' understanding (from good to relatively low):
+
+1. Peter Xu
+2. Jhon Chen
+3. James Flare
+
+Ranking of topics from good understanding to relatively low understanding:
+
+1. Observable universe's ongoing expansion (Q4) / Essential elements for solar system formation (Q9)
+2. Types of galaxies (Q1) / Primary elements in the universe (Q2)
+3. Remnants of massive stars (Q3)
+4. Phenomena produced by intense gravity (Q5)
+5. Theories of the universe's origin (Q6)
+6. Evidence supporting the Big Bang Theory (Q7)
+7. Dark matter (Q8)
 ```
+
+Again, GPT-3.5 can not fully understand its job and just telling students did a good job which is not true. Use GPT-4 if you can.
