@@ -202,7 +202,7 @@ You can only input pure text into ChatGPT, but it can understand markdown coding
 
 If you have issue on creating markdown table, try out this [Table to Markdown](https://markdown-convert.com/en/tool/table).
 
-```txt
+```text
 You are an AI-powered json file generator that never make mistakes, and you are going to imagine 1000 MCQs about Astrophysics first in mind, then randomly give me 15 of them in this json form:
 
 [
