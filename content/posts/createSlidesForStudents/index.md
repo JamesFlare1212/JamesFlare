@@ -48,3 +48,4 @@ repost:
 
 ## Introduction
 
+When we are preparing lessons or reviewing subjects. We may want to create a power point to help us learn the knowledge.
