@@ -7,7 +7,7 @@ draft: false
 author: "James"
 authorLink: "https://www.jamesflare.com"
 authorEmail: "jamesflare1212@gmail.com"
-description: "There are **389** terms with Definition, Explanation and Example."
+description: "There are 389 terms with Definition, Explanation and Example."
 keywords: ""
 license: ""
 comment: true
@@ -21,7 +21,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 
-summary: "There are **389** terms with Definition, Explanation and Example."
+summary: "There are 389 terms with Definition, Explanation and Example."
 resources:
 - name: featured-image
   src: featured-image.jpg
