@@ -1212,7 +1212,9 @@ MRS. tilford <u>(abstractedly)</u> What? <u>(Starts to move about again.)</u>
 
 **MARY:** <u>(softly)</u> Whoooooo. <u>(ROSALIE jumps)</u> Whoooooo.
 
-**ROSALIE:**, frightened,starts hurriedly for the door. Mary sits up, laughs)</u> You’re a goose.
+**ROSALIE:**, frightened,starts hurriedly for the door.
+
+**Mary:** <u>(sits up, laughs)</u> You’re a goose.
 
 **ROSALIE:** <u>(belligerently)</u> Oh, so it’s you. Well, who likes to hear funny noises at night? You could have been a werewolf.
 
@@ -1774,7 +1776,7 @@ What Mary said was right. I said it. I said it —
 ## Act Three
 
 **SCENE:** The same as Act One. Living room of the school.
-at rise: The room has changed. It is not dirty, but it is dull and dark and uncared for. The windows are tightly shut, the curtains tightly drawn. Karen is sitting in a large chair, right center, feet flat on floor. Martha is lying on the couch, her face buried against the pillows, her back to **KAREN:** It is a minute or two after the rise of the curtain before either speaks.
+at rise: The room has changed. It is not dirty, but it is dull and dark and uncared for. The windows are tightly shut, the curtains tightly drawn. Karen is sitting in a large chair, right center, feet flat on floor. Martha is lying on the couch, her face buried against the pillows, her back to KAREN It is a minute or two after the rise of the curtain before either speaks.
 
 **MARTHA:** It’s cold in here.
 
@@ -2112,6 +2114,7 @@ why. Look, I’m standing here. I haven't changed. <u>(Holds out her hands)</u> 
 **CARDIN:** It could be, Karen. We’ll make it be like that.
 
 **KAREN:** No. That’s only what we’d like to have had. It’s what we can’t have now. Go home, darling.
+
 **CARDIN:** <u>(with force)</u> Don't talk like that. No matter what it is, we can’t leave each other. I can’t leave you —
 
 **KAREN:** Joe, Joe. Let’s do it now and quick; it will be too hard later on.
@@ -2130,6 +2133,7 @@ why. Look, I’m standing here. I haven't changed. <u>(Holds out her hands)</u> 
 **CARDIN:** <u>(after a long pause)</u> Yes, if you want, but it won’t make any difference. We will —
 
 **KAREN:** Don’t say anything. Please go now. <u>(She sits down, smiles, closes her eyes. For a moment he stands looking at her, then slowly puts on his hat)</u> And all my heart goes with you.
+
 **CARDIN:** <u>(at door, leaving)</u> I’ll be coming back. <u>(Exits, slowly, reluctantly, closing door.)</u>
 
 **KAREN:** <u>(a moment after he has gone)</u> No, you won’t. Never, darling. <u>(Stays as she is until Martha enters right.)</u>
@@ -2239,9 +2243,11 @@ hands away)</u> You've got to know it. I can't keep it any longer. I’ve got to
 **MARTHA:** I’ve been telling myself that since die night we heard the child say it; I’ve been praying I could convince myself of it. I can't, I can't any longer. It’s diere. I don't know how, I don’t know why. But I did love you. I do love you. I resented your marriage; maybejaecause I-wanted you; maybe I wanted you all along; maybe I couldn’t call it by a name; maybe it’s been there ever since I first knew you —
 
 **KAREN:** <u>(tensely)</u> It’s a lie. You’re telling yourself a lie. We never thought of each other that way.
+
 **MARTHA:** <u>(bitterly)</u> No, of course you didn't. But who says I didn’t? I never felt that way about anybody but you. I’ve never loved a man — <u>(Slops. Softly)</u> I never knew why before. Maybe it’s that.
 
 **KAREN:** <u>(carefully)</u> You are tired and sick.
+
 **MARTHA:** <u>(as though she were talking to herself)</u> It's funny; it’s all mixed up. There’s something in you, and you don’t know it and you don’t do anything about it. Suddenly^ child-geu-bored and Jies —and there yotuare, seeing it for the first time. <u>(Closes her eyes)</u> I don’t know. It all seems to come back to me. In some way I've ruined your life. I've ruined my own. I didn’t even know. <u>(Smiles)</u> There's a big difference between us now, Karen. I feel all dirty and — <u>(Puts out her hand, touches Karen's head)</u> I can’t stay with you anymore, darling.
 
 **KAREN:** <u>(in a shaken, uncertain tone)</u> All this isn’t true. You've never said it; we’ll forget it by tomorrow —
@@ -2261,6 +2267,7 @@ hands away)</u> You've got to know it. I can't keep it any longer. I’ve got to
 **MRS. MORTAR:** We’ve got to do something. Oh, it’s awful. Poor 
 
 **MARTHA:** I don't know what we can do— <u>(Puts phone down, collapses in chair, sobs quietly)</u> You think she's dea—
+
 **KAREN:** Yes.
 
 **MRS. MORTAR:** Poor, poor Martha. I can’t realize it’s true. Oh, how could she — she was so — I don’t know what — <u>(Looks up, still crying, surprised)</u> I'm — I’m frightened.
@@ -2311,6 +2318,7 @@ hands away)</u> You've got to know it. I can't keep it any longer. I’ve got to
 **KAREN:** I’m not mad at you, Agatha.
 
 **AGATHA:** Can I — can I get you something?
+
 **KAREN:** No.
 
 **AGATHA:** You poor child. You look like you got a pain. <u>(Hesitates, takes Karen’s hands)</u> I only came cause she’s so bad off. She's got to see you, Miss Karen, she’s just got to. She’s been sittin' outside in the car, hoping you’d come out. She can’t get Dr. Joe. He — he won’t talk to her anymore. I wouldn’t a come — I always been on your side — but she’s
@@ -2345,8 +2353,7 @@ AGATHA. Outside.
 
 **MRS. TILFORD:** <u>(puts her hand to her throat)</u> I’ve got to tell you.
 
- **KAREN:** I don't want to hear you.
-
+**KAREN:** I don't want to hear you.
 
 **MRS. TILFORD:** Last Tuesday Mrs. Wells found a bracelet in 
 ROSALIE’s room. The bracelet had been hidden for several months. We found out that ROSALIE had taken the bracelet from another girl, and that Mary — <u>(Closes her eyes)</u> that Mary knew that and used it to force ROSALIE into saying that she had seen you and Miss Dobie together. I — I’ve talked to Mary. I’ve found out. <u>(Karen suddenly begins to laugh, high and sharp)</u> Don't do that, Karen. I have only a little more to say. I've tried to say it to you for six days. I’ve talked to Judge Potter. He will make all arrangements.
@@ -2425,6 +2432,7 @@ mrs. th.ford <u>(clings to her)</u> Then you’ll try for yourself.
 **KAREN:** <u>(suddenly)</u> Is it nice out?
 
 **MRS. TILFORD:** It's been cold. <u>(Karen opens the window slightly, sits on the ledge.)</u>
+
 **KAREN:** It feels very good.
 
 **MRS. TILFORD:** You'll write me sometime?
