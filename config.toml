@@ -73,5 +73,7 @@ theme = "FixIt"
   [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+        [markup.goldmark.parser.attribute]
+            block = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]

@@ -4,8 +4,9 @@ title: ChatGPT-Web 下月见啦
 subtitle:
 date: 2023-03-26T13:00:18+08:00
 draft: false
-author: James
-name: James
+author:
+  name: James
+  link: https://www.jamesflare.com
 link: 
 email: 
 avatar:
