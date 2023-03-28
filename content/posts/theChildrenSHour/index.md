@@ -738,7 +738,7 @@ move in with Evelyn. Mary will go in with ROSALIE
 
 **ROSALIE:** I have a class soon. If you’re going to move your tilings —
 
-**MARY:** Close that door, you idiot. <u>(**ROSALIE:** closes door, stands near it)</u> What do you want?
+**MARY:** Close that door, you idiot. <u>(ROSALIE closes door, stands near it)</u> What do you want?
 
 **ROSALIE:** I'm trying to tell you. If you’re going to move your things — not that I want you in with me — you'd better start right now. Miss Wright’s coming in a minute.
 
@@ -830,11 +830,11 @@ move in with Evelyn. Mary will go in with ROSALIE
 
 **EVELYN:** What you going to do about the vathe?
 
-**MARY:** I don’t care about **ROSALIE:** and I don’t care about the vase. I’m not going to be here.
+**MARY:** I don’t care about ROSALIE and I don’t care about the vase. I’m not going to be here.
 
-**EVELYN and PEGGY <u>(together)</u>:** Not going to be here! What do you mean?
+**EVELYN and PEGGY:** <u>(together)</u> Not going to be here! What do you mean?
 
-**MARY <u>(calmly)</u>:** I’m going home.
+**MARY:** <u>(calmly)</u> I’m going home.
 
 **PEGGY:** Oh, Mary —
 
@@ -1180,6 +1180,7 @@ MRS. tilford <u>(abstractedly)</u> What? <u>(Starts to move about again.)</u>
 **AT RISE:** Mary is lying on the floor playing with a puzzle. Agatha appears lugging blankets and pillows across the room. Almost at the door, she slops and gives Mary an annoyed look.
 
 **AGATHA:** And see to it that she doesn’t get my good quilt all dirty, and let her wear your green pajamas.
+
 **MART:** Who?
 
 **AGATHA:** Who? ROSALIE Wells is coming over to spend the night with you.
@@ -1288,7 +1289,7 @@ MRS. tilford <u>(abstractedly)</u> What? <u>(Starts to move about again.)</u>
 
 **ROSALIE:** <u>(tearfully)</u> You made it up. You’re always making things up.
 
-**MARY:** You can't call me a fibber, **ROSALIE:** Wells. That’s a kind of a dare and I won’t take a dare. I guess I’ll go tell Grandma, anyway. Then she can call the police and they'll come for you and you’ll spend the rest of your life in one of those solitary prisons and you’ll get older and older, and when you're very old and can't see anymore, they’ll let you out maybe and your mother and father will be dead and you won’t have anyplace to go and you’ll beg on the streets —
+**MARY:** You can't call me a fibber, ROSALIE Wells. That’s a kind of a dare and I won’t take a dare. I guess I’ll go tell Grandma, anyway. Then she can call the police and they'll come for you and you’ll spend the rest of your life in one of those solitary prisons and you’ll get older and older, and when you're very old and can't see anymore, they’ll let you out maybe and your mother and father will be dead and you won’t have anyplace to go and you’ll beg on the streets —
 
 **ROSALIE:** I didn’t steal anything. I borrowed the bracelet and I was going to put it back as soon as I'd worn it to the movies. I never meant to keep it.
 
@@ -1457,6 +1458,7 @@ wasting your time. <u>(Gets up, puts down his glass)</u> It's not like you to wa
 **KAREN:** That — that Martha and I are — in love with each other. In love with each other. Mrs, Tilford told them.
 
 **CARDIN:** <u>(fora moment stands staring al her incredulously. Then he walks across the room, stares out of the window, and finally turns to Mrs. Tilford)</u> Did you tell them that?
+
 **MRS. TILFORD:** Yes.
 
 **CARDIN:** Are you sick?
@@ -1728,6 +1730,7 @@ Martha <u>(her face distorted, turns to Mrs. Tilford)</u> That child — that ch
 **CARDIN:** <u>(wearily)</u> Oh, my Godl
 
 **MARY:** It was ROSALIE Grandma, she told us all about it. She said she had read about it in a book and she knew. <u>(Desperately)</u> You ask ROSALIE You just ask ROSALIE She’ll tell you. We used to talk about it all the time. That’s the truth, that's the honest truth. She said it was when the door was open once and she told us all about it. I was just trying to save ROSALIE, and everybody jumps on me.
+
 **MRS. TILFORD:** <u>(to Cardin)</u> Please wait a minute. <u>(Goes to library door)</u> ROSALIE!
 
 **CARDIN:** You’re giving yourself an awful beating, Amelia, anti you deserve whatever you get.
@@ -2130,6 +2133,7 @@ why. Look, I’m standing here. I haven't changed. <u>(Holds out her hands)</u> 
 **CARDIN:** No. I won’t —
 
 **KAREN:** Will you—will you go away for two days — a day — and think this all over by yourself — away from me and love and pity? Will you? And then decide.
+
 **CARDIN:** <u>(after a long pause)</u> Yes, if you want, but it won’t make any difference. We will —
 
 **KAREN:** Don’t say anything. Please go now. <u>(She sits down, smiles, closes her eyes. For a moment he stands looking at her, then slowly puts on his hat)</u> And all my heart goes with you.
@@ -2404,6 +2408,7 @@ mrs. th.ford <u>(clings to her)</u> Then you’ll try for yourself.
 **MRS. TILFORD:** <u>(makes a half-movement to rise)</u> I’ll go to him right away.
 
 **KAREN:** No, it’s better now the way it is.
+
 **MRS. TILFORD:** But he must know what I know, Karen. You must go back to him.
 
 **KAREN:** <u>(smiles)</u>, No, not anymore.
