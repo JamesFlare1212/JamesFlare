@@ -3,7 +3,7 @@ slug: negative-motivation-collection
 title: 毒鸡汤合集
 subtitle:
 date: 2023-04-03T11:47:56+08:00
-draft: true
+draft: false
 author:
   name: James
   link:
