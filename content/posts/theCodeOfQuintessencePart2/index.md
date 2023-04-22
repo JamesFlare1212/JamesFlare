@@ -4,9 +4,11 @@ title: "Stable Diffusion 元素法典 Part2"
 subtitle: ""
 date: 2023-03-05T01:08:12+08:00
 draft: false
-author: "James"
-authorLink: "https://www.jamesflare.com"
-authorEmail: "jamesflare1212@gmail.com"
+author:
+  name: James
+  link:
+  email:
+  avatar:
 description: "这是《元素法典》（第贰卷）的重写版本，主要是原版是一个在线文档，不够轻量和灵活。"
 keywords: ""
 license: ""
