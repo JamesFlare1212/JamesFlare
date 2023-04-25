@@ -1,7 +1,7 @@
 ---
-slug: "code-quintessence-part-2"
-title: "Stable Diffusion 元素法典 Part2"
-subtitle: ""
+slug: code-quintessence-part-2
+title: Stable Diffusion 元素法典 Part 2
+subtitle:
 date: 2023-03-05T01:08:12+08:00
 draft: false
 author:
@@ -9,41 +9,34 @@ author:
   link:
   email:
   avatar:
-description: "这是《元素法典》（第贰卷）的重写版本，主要是原版是一个在线文档，不够轻量和灵活。"
-keywords: ""
-license: ""
+description: 这是《元素法典》（第贰卷）的重写版本，主要是原版是一个在线文档，不够轻量和灵活。
+keywords:
+license:
 comment: true
 weight: 0
-
 tags:
-- Stable Diffusion
+  - Stable Diffusion
 categories:
-- Tutorials
-- Sharing
-
+  - Tutorials
+  - Sharing
 hiddenFromHomePage: false
 hiddenFromSearch: false
-
-summary: "这是《元素法典》（第贰卷）的重写版本，主要是原版是一个在线文档，不够轻量和灵活。"
+summary: 这是《元素法典》（第贰卷）的重写版本，主要是原版是一个在线文档，不够轻量和灵活。
 resources:
-- name: featured-image
-  src: featured-image.jpg
-- name: featured-image-preview
-  src: featured-image-preview.jpg
-
-toc:
-  enable: true
-math:
-  enable: false
-lightgallery: true
-seo:
-  images: []
-
+  - name: featured-image
+    src: featured-image.jpg
+  - name: featured-image-preview
+    src: featured-image-preview.jpg
+toc: true
+math: false
+lightgallery: false
+password:
+message:
 repost:
   enable: true
-  url: ""
+  url:
 
-# See details front matter: https://fixit.lruihao.cn/theme-documentation-content/#front-matter
+# See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
 
 <!--more-->
