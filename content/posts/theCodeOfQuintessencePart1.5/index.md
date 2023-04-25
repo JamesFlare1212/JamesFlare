@@ -1,6 +1,6 @@
 ---
 slug: "code-quintessence-part-1-5"
-title: "Stable Diffusion 元素法典 Part1.5"
+title: "Stable Diffusion 元素法典 Part 1.5"
 subtitle: ""
 date: 2023-03-03T01:26:23+08:00
 draft: false
